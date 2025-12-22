@@ -1,38 +1,30 @@
 'use client';
-import {useLocale, useTranslations} from "next-intl";
-import {usePathname, useRouter} from "@/i18n/routing";
-import {Button, buttonVariants} from "@/components/ui/button";
-import {DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger} from "@/components/ui/dropdown-menu";
+import { useLocale, useTranslations } from "next-intl";
+import { usePathname, useRouter } from "@/i18n/routing";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import * as React from "react";
-import {useSearchParams} from "next/navigation";
-import {useMediaQuery} from "react-responsive";
-import {IconWorld} from "@tabler/icons-react";
-import {VariantProps} from "class-variance-authority";
+import { useMediaQuery } from "react-responsive";
+import { IconChevronDown } from "@tabler/icons-react";
+import { VariantProps } from "class-variance-authority";
 
 type ButtonSize = VariantProps<typeof buttonVariants>["size"];
 
-interface LanguageSelectorProps
-{
+interface LanguageSelectorProps {
     size?: ButtonSize;
 }
 
-export default function LanguageSelector({size = 'icon'}: LanguageSelectorProps)
-{
+export default function LanguageSelector({ size = 'sm' }: LanguageSelectorProps) {
     const t = useTranslations("header");
     const pathname = usePathname();
     const router = useRouter();
-    const searchParams = useSearchParams();
-    const isMobile = useMediaQuery({maxWidth: 1024});
+    const isMobile = useMediaQuery({ maxWidth: 1024 });
     const currentLocale = useLocale();
 
-    async function handleLocaleChange(locale: string)
-    {
-        // Preserve search params.
-        const params = new URLSearchParams(searchParams);
-        const newPath = params.toString() ? `${pathname}?${params.toString()}` : pathname;
-
+    function handleLocaleChange(locale: string) {
         if (currentLocale === locale) return;
-        router.replace(newPath, {locale: locale});
+
+        router.replace(pathname, { locale });
     }
 
     return (
@@ -43,19 +35,20 @@ export default function LanguageSelector({size = 'icon'}: LanguageSelectorProps)
                     variant={'ghost'}
                     size={size}
                     aria-controls="language-menu"
-                    aria-label={"Select language"}
                     aria-expanded="false"
+                    className={'max-lg:justify-start max-lg:text-base lg:font-normal max-lg:ps-4'}
                 >
-                    <IconWorld/>
+                    {t(currentLocale)}<IconChevronDown />
                 </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
+            <DropdownMenuContent>
                 <DropdownMenuItem onClick={() => handleLocaleChange("en")}>
-                    {t("english")}
+                    {t("en")}
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => handleLocaleChange("ar")}>
-                    {t("arabic")}
+                    {t("ar")}
                 </DropdownMenuItem>
+
             </DropdownMenuContent>
         </DropdownMenu>
     );

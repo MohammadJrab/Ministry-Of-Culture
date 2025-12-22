@@ -27,7 +27,7 @@ const TheUnescoSection = async ({ locale }: { locale: string }) => {
                 <div className="text-center mb-16">
                     <h2 className="text-white text-3xl md:text-3xl font-bold inline-block relative">
                         {t('title')}
-                        <span className="block h-0.5 w-1/3 bg-[#A48E68] mx-auto mt-6"></span>
+                        <span className="block h-0.5 w-1/3 bg-[#A48E68]  mx-auto mt-6"></span>
                     </h2>
                 </div>
 
@@ -39,8 +39,9 @@ const TheUnescoSection = async ({ locale }: { locale: string }) => {
                         className="relative bg-gradient-to-br from-[rgba(185,167,121,0.39)] to-[rgba(185,167,121,0.1)] backdrop-blur-md border border-white/20 p-8 rounded-2xl "
                     >
                         <div className="absolute top-4 left-4 w-12 h-12 border-t-2 border-l-2 border-white/50 rounded-tl-lg" />
+                        <img src="/svg/unisco_pattern.svg" alt="unisco_pattern" className="object-cover absolute top-0 right-0 size-56" />
 
-                        <p className="text-white text-lg px-8 py-6 md:text-xl whitespace-pre-line leading-relaxed">
+                        <p className="text-white text-lg px-8 py-6 md:text-lg whitespace-pre-line leading-relaxed">
                             {t('description')}
                         </p>
                         <div className={`absolute bottom-4 end-4 bg-[#333] p-3 rounded-lg text-white hover:bg-black transition-colors`}>
