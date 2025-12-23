@@ -9,6 +9,7 @@ import TheUnescoSection from '../_components/sections/TheUnescoSection';
 import HeroSection from "../_components/sections/hero";
 import Footer from "../_components/footer";
 import ScrollToTopButton from "../_components/scroll-to-top-button";
+import VisionSection from "../_components/sections/VisionSection";
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
 
@@ -19,6 +20,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 <SyriaSection locale={locale} />
                 <CulturalPrinciplesSection locale={locale} />
                 <TheUnescoSection locale={locale} />
+                <VisionSection locale={locale} />
+
             </div>
             <ScrollToTopButton />
         </main>

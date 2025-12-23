@@ -159,6 +159,9 @@
       }
     }
   },
+  "visionSection": {
+    "quote": "“Vision is neither a slogan nor a <secondary>decision.</secondary>. Today, it stands as the title of recovery, <primary>the restoration of the civilizational narrative, and the building of the future.</primary>”"
+  },
   "aboutUs": {
     "badge": "About Us",
     "title": "Building tomorrow's software, today",
@@ -319,6 +322,11 @@
     "mailtoSubject": "New Contact Form Submission"
   },
   "metadata": {
+    "home": {
+      "title": "Ministry Of Culture",
+      "description": "",
+      "keywords": []
+    },
     "title": "Reliable Digital Solutions For Your Business",
     "description": "Transform your ideas into innovative software solutions with QMind Tech. We specialize in web development, mobile apps, AI solutions, and system integration, serving clients worldwide with scalable, secure applications that drive business growth.",
     "keywords": [

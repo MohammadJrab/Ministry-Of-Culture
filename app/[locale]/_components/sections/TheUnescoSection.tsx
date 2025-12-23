@@ -2,11 +2,26 @@ import React from 'react'
 import Image from 'next/image'
 import { getTranslations } from 'next-intl/server';
 import { IconArrowForwardUpDouble, IconArrowRight } from '@tabler/icons-react';
+import { UnescoCarousel } from './UnescoCarousel';
 
 const TheUnescoSection = async ({ locale }: { locale: string }) => {
     const t = await getTranslations({ locale, namespace: 'theUnesco' });
 
     const indices = Array.from({ length: 5 }, (_, i) => i.toString());
+
+    const images = [
+        "/images/hand-glass.png",
+        "/images/soap-making.png",
+        "/images/hawk.png",
+        "/images/damascus-rose.png",
+        "/images/shadow-play.png"
+    ];
+
+    const items = indices.map((index) => ({
+        title: t(`items.${index}.title`),
+        year: t(`items.${index}.year`),
+        image: images[parseInt(index)] || "/images/glass-blowing.jpg"
+    }));
 
     return (
         <section className="relative w-full isolate min-h-[600px] overflow-hidden">
@@ -52,40 +67,10 @@ const TheUnescoSection = async ({ locale }: { locale: string }) => {
                     </div>
 
                     {/* Right: Slider */}
-                    <div className="flex flex-col items-center md:items-end gap-6">
-                        <div className="flex flex-col md:flex-row items-center gap-6 text-white group cursor-pointer">
-                            <div className={locale === 'ar' ? 'text-right' : 'text-left'}>
-                                <h3 className="text-2xl font-bold">{t(`items.0.title`)}</h3>
-                                <p className="text-[#A48E68] font-semibold text-lg">{t(`items.0.year`)}</p>
-                            </div>
-
-                            <div className="relative w-64 h-40 rounded-2xl overflow-hidden border-2 border-white/30 group-hover:border-white transition-all">
-                                <Image
-                                    src="/images/glass-blowing.jpg"
-                                    alt="Heritage"
-                                    fill
-                                    className="object-cover"
-                                />
-                            </div>
-                        </div>
-
-                        {/* Pagination */}
-                        <div className="flex items-center gap-4 mt-4">
-                            <button className="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center text-white hover:bg-white/10">
-                                <span className="sr-only">Previous</span>
-                                <span>{"<"}</span>
-                            </button>
-
-                            <div className="w-10 h-10 rounded-full bg-[#00695C] flex items-center justify-center text-white font-bold ring-4 ring-white/10">
-                                1
-                            </div>
-
-                            <button className="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center text-white hover:bg-white/10">
-                                <span className="sr-only">Next</span>
-                                <span>{">"}</span>
-                            </button>
-                        </div>
-                    </div>
+                    <UnescoCarousel
+                        items={items}
+                        locale={locale}
+                    />
 
                 </div>
             </div>

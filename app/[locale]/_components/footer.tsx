@@ -69,7 +69,7 @@ export default async function Footer({ locale }: { locale: string }) {
                                 <div className="flex items-center gap-3 text-gray-400 transition-colors">
                                     <IconPhone
                                         className="w-4 h-4 text-primary transition-transform" />
-                                    <span className="text-sm" dir={'ltr'}>+49 176 3662 3030</span>
+                                    <span className="text-sm" dir={'ltr'}>+963 111 111 111</span>
                                 </div>
                                 <div className="flex items-center gap-3 text-gray-400 transition-colors">
                                     <IconMail
