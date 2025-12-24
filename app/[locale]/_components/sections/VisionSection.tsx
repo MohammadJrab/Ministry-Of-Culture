@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-export default async function VisionSection({ locale }: { locale: string }) {
-    const t = await getTranslations({ locale, namespace: 'visionSection' });
+export default async function VisionSection() {
+    const t = await getTranslations('visionSection');
     return (
         <section className={'pt-16 md:pt-32  h-120  w-full  '}>
             <div className={'flex  relative justify-center items-center text-center'}

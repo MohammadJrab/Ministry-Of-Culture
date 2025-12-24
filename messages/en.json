@@ -18,71 +18,55 @@
       "address": ""
     },
     "sections": {
-      "services": {
-        "title": "Services",
+      "sections": {
+        "title": "Sections",
         "links": [
           {
-            "label": "Web Development",
-            "href": "#services"
+            "label": "Home",
+            "href": "/"
           },
           {
-            "label": "Mobile Apps",
-            "href": "#services"
+            "label": "About Ministry",
+            "href": "/about"
           },
           {
-            "label": "AI Solutions",
-            "href": "#services"
-          },
-          {
-            "label": "System Integration",
-            "href": "#services"
-          },
-          {
-            "label": "Cybersecurity",
-            "href": "#services"
-          },
-          {
-            "label": "UI/UX Design",
-            "href": "#services"
-          },
-          {
-            "label": "Tech Consulting",
-            "href": "#services"
-          }
-        ]
-      },
-      "company": {
-        "title": "Company",
-        "links": [
-          {
-            "label": "About Us",
-            "href": "#about-us"
-          },
-          {
-            "label": "Services",
-            "href": "#services"
-          },
-          {
-            "label": "Our Projects",
-            "href": "#projects"
-          },
-          {
-            "label": "Our Team",
-            "href": "#team"
+            "label": "International Participation",
+            "href": "/international-participation"
           },
           {
             "label": "Contact Us",
-            "href": "#contact-us"
+            "href": "/contact-us"
+          },
+          {
+            "label": "Events",
+            "href": "http://events.moc.gov.sy"
+          }
+        ]
+      },
+      "importantLinks": {
+        "title": "Important Links",
+        "links": [
+          {
+            "label": "Ministry of Foreign Affairs and Expatriates",
+            "href": "https://mofaex.gov.sy"
+          },
+          {
+            "label": "Ministry of Public Works and Housing",
+            "href": "https://mopwh.gov.sy"
+          },
+          {
+            "label": "Ministry of Social Affairs and Labor",
+            "href": "https://mosal.gov.sy"
           }
         ]
       }
     },
     "social": {
+      "title": "Follow Us On Social Media",
       "facebook": "Facebook",
-      "instagram": "Instagram",
-      "linkedin": "LinkedIn"
+      "instagram": "Instagram"
     },
-    "copyright": "© QMind Tech {year}. All rights reserved.",
+    "copyright": "© Ministry of Culture | Syrian Arab Republic <br></br> All rights reserved {year}",
     "status": {
       "operational": "All systems operational"
     }
@@ -162,214 +146,92 @@
   "visionSection": {
     "quote": "“Vision is neither a slogan nor a <secondary>decision.</secondary>. Today, it stands as the title of recovery, <primary>the restoration of the civilizational narrative, and the building of the future.</primary>”"
   },
-  "aboutUs": {
-    "badge": "About Us",
-    "title": "Building tomorrow's software, today",
-    "description": "We're a passionate team of software engineers turning complex challenges into elegant, scalable solutions for startups and Fortune 500 companies alike."
-  },
-  "services": {
-    "sectionBadge": "Our Services",
-    "sectionTitle": "Services We Offer",
-    "sectionDescription": "Comprehensive solutions tailored to transform your business and drive digital innovation",
-    "web": {
-      "title": "Web Development",
-      "description": "We design fast, responsive, and professional websites for all devices."
-    },
-    "mobile": {
-      "title": "Mobile Apps",
-      "description": "We build high-performance iOS and Android apps with great user experience."
-    },
-    "ai": {
-      "title": "AI Integration",
-      "description": "We help you integrate ready-made AI technologies to enhance your business."
-    },
-    "systems": {
-      "title": "Business Systems",
-      "description": "We deliver smart CRM & ERP solutions to streamline operations."
-    },
-    "security": {
-      "title": "Cybersecurity",
-      "description": "We secure your data from digital threats with robust architecture."
-    },
-    "uiux": {
-      "title": "UI/UX Design",
-      "description": "We create engaging interfaces focused on user experience."
-    },
-    "consulting": {
-      "title": "Tech Consulting",
-      "description": "We provide tech and AI consulting to support your decisions."
+  "aboutMinistry": {
+    "hero": {
+      "title": "Our Vision",
+      "description": "To consolidate Syria's position as the heart of the world and to shape a prosperous and renewed future"
     }
   },
-  "projects": {
-    "sectionBadge": "Projects",
-    "sectionTitle": "Our Featured Projects",
-    "sectionDescription": "Discover our latest work and the innovative solutions we've crafted for our clients",
-    "filters": {
-      "all": "All Projects",
-      "websites": "Websites",
-      "apps": "Mobile Apps"
-    },
-    "featured": "Featured",
-    "viewProject": "View Project",
-    "ctaText": "Have a project in mind? Let's build something amazing together.",
-    "ctaButton": "Start Your Project",
-    "items": {
-      "motora": {
-        "title": "Motora",
-        "description": "Modern online platform for buying and selling cars, offering a secure and transparent experience"
+  "nationalCulturalIdentity": {
+    "title": "Ministry of Culture… the identity that unites Syrians"
+  },
+  "ourTasksSection": {
+    "title": "Our Tasks",
+    "tasks": {
+      "1": {
+        "title": "Preserving Heritage"
       },
-      "al-amal-group": {
-        "title": "Al-Amal Group",
-        "description": "Syrian–German investment group bringing together a diverse portfolio of companies across multiple sectors"
+      "2": {
+        "title": "Supporting Arts"
       },
-      "click-go": {
-        "title": "Click Go",
-        "description": "Logistics company that connects businesses worldwide with smart and reliable shipping solutions"
+      "3": {
+        "title": "Enhancing Syrian Identity"
       },
-      "medad": {
-        "title": "Medad",
-        "description": "A Syrian Ministry of Culture initiative to develop and organize cultural events nationwide"
-      },
-      "qmind-hr": {
-        "title": "QMind HR",
-        "description": "HR System designed to streamline and automate human resources operations"
-      },
-      "hassa": {
-        "title": "Hassa",
-        "description": "Fintech company providing secure, reliable payment solutions for freelancers and businesses."
-      },
-      "eliterentals": {
-        "title": "Elite Rentals",
-        "description": "Luxury car rental service with premium user experience"
-      },
-      "charthive": {
-        "title": "Chart Hive",
-        "description": "Advanced data visualization and analytics platform"
-      },
-      "motora-app": {
-        "title": "Motora Mobile",
-        "description": "Native mobile app for seamless car shopping experience"
-      },
-      "qrate": {
-        "title": "QRate",
-        "description": "Student app that provides subjects, questions, and answers to help prepare for every test"
-      },
-      "qmind-hr-app": {
-        "title": "QMind HR App",
-        "description": "An intuitive mobile app that automates essential HR operations for employees and managers on the go."
-      },
-      "medad-app": {
-        "title": "Medad App",
-        "description": "A mobile app by the Syrian Ministry of Culture for discovering cultural events."
+      "4": {
+        "title": "Supporting Creativity"
       }
     }
   },
-  "team": {
-    "badge": "Meet Our Team",
-    "title": "The Innovators Behind Your Success",
-    "description": "Meet the dedicated problem-solvers and tech enthusiasts who turn complex challenges into elegant, impactful solutions.",
-    "member": {
-      "name": {
-        "kinan": "Ahmed Kinan Ghbash",
-        "ramadan": "Mohammad Ramadan",
-        "jrab": "Mohmmad Jrab",
-        "karim": "Karim Habbal"
+  "ourMessageSection": {
+    "title": "Our Message",
+    "description": "Syria should lead the transformation with a future vision that empowers its people while preserving the authenticity of its heritage."
+  },
+  "syrianStorySection": {
+    "header": "The Syrian Story",
+    "title": "Our story is not one of destruction, but of resilience, told from generation to generation…",
+    "description": "The Syrian story is a story that stirs emotions, where pain and hope intertwine. It is a story of struggle between good and evil, between the weak right, which has no supporter but God, and the powerful wrong, which possesses all the tools of killing and destruction. For our story is a lesson from history, a true representation of the noble meanings of humanity.",
+    "quote": "We in the Ministry of Culture strive to tell the Syrian story in a manner befitting its importance…"
+  },
+  "theNewSyriaSection": {
+    "part1": "The <secondary>New Syria...</secondary><br></br>",
+    "part2": "Returns to the world<primary> once again</primary>"
+  },
+  "highlightsOfInternationalParticipations": {
+    "title": "Highlights of International Participations",
+    "highlights": {
+      "1": {
+        "title": "Meeting Between the Syrian Minister of Culture and the Qatari Minister of Culture",
+        "description": "His Excellency the Minister of Culture, Mohammad Yaseen Al-Saleh, met in Doha with His Excellency Sheikh Abdulrahman bin Hamad Al Thani, Minister of Culture of Qatar."
       },
-      "role": {
-        "ctoFronted": "CTO & Frontend Dev",
-        "aiEng": "AI Engineer",
-        "mobileDev": "Mobile Apps Dev",
-        "uiUx": " UI/UX Designer"
+      "2": {
+        "title": "Joint Project Between the Ministry of Culture and the Horizons Exploration Center in Abu Dhabi",
+        "description": "The Ibn Battuta Prize for Travel Literature 2025–2026 announced in its annual statement from Abu Dhabi and London the names of the winners of its new edition, in the presence of an elite group of Arab and international researchers and writers."
+      },
+      "3": {
+        "title": "Visit of a Ministry of Culture Delegation to Qatar National Library",
+        "description": "A delegation from the Ministry of Culture visited the Qatar National Library to explore its most prominent departments and cultural initiatives."
+      },
+      "4": {
+        "title": "Participation of the Ministries of Culture and Tourism Delegations in a Dialogue Session Organized by the Italian Ministry of Foreign Affairs",
+        "description": "The session was attended by the Minister of Tourism, Mr. Mazen Al-Salhani, and the Minister of Culture, Mr. Mohammad Yaseen Al-Saleh."
       }
     }
   },
   "contactUs": {
-    "badge": "Get In Touch",
-    "title": "Let's Build Something Amazing",
-    "description": "Ready to transform your ideas into reality? We'd love to hear about your project and discuss how we can help you succeed.",
-    "infoTitle": "Contact Information",
-    "office": {
-      "title": "Visit Our Office",
-      "location1": "Südstraße 49f, 03253 - Doberlug-kirchhain - Germany",
-      "location2": "Al-Forqan - Aleppo - Syria"
-    },
-    "phone": {
-      "title": "Call Us"
-    },
-    "email": {
-      "title": "Email Us"
-    },
-    "hours": {
-      "title": "Business Hours",
-      "weekdays": "Sat - Thur: 9:00 - 18:00",
-      "friday": "Fri: Closed"
-    },
-    "form": {
-      "name": "Full Name",
-      "email": "Email Address",
-      "company": "Company",
-      "optional": "(optional)",
-      "subject": "Subject",
-      "message": "Message",
-      "send": "Send Message",
-      "note": "We typically respond within 24 hours. Your information is kept confidential.",
-      "placeholders": {
-        "company": "Your Company",
-        "subject": "Project Discussion",
-        "message": "Tell us about your project, timeline, and requirements..."
-      }
-    },
-    "mailtoSubject": "New Contact Form Submission"
+    "title": "Contact with Ministry",
+    "faxLabel": "Fax",
+    "mapAlt": "Map of our office location",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your Full Name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "example@domain.com",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "Your contact number",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Enter your message or inquiry",
+    "sendButton": "Send Message",
+    "emailSubject": "New message from website contact form"
   },
   "metadata": {
     "home": {
       "title": "Ministry Of Culture",
       "description": "",
+      "appName": "Ministry Of Culture",
       "keywords": []
     },
-    "title": "Reliable Digital Solutions For Your Business",
-    "description": "Transform your ideas into innovative software solutions with QMind Tech. We specialize in web development, mobile apps, AI solutions, and system integration, serving clients worldwide with scalable, secure applications that drive business growth.",
-    "keywords": [
-      "software development company",
-      "web development services",
-      "mobile app development",
-      "AI solutions",
-      "system integration",
-      "cybersecurity services",
-      "UI/UX design",
-      "tech consulting",
-      "React development",
-      "Next.js development",
-      "TypeScript development",
-      "Node.js development",
-      "Python development",
-      "ASP.Net development",
-      "C# development",
-      "enterprise software",
-      "software company Germany",
-      "web development Doberlug-kirchhain",
-      "Syrian software developers",
-      "European tech company",
-      "Syrian tech company",
-      "custom software solutions",
-      "scalable applications",
-      "digital transformation",
-      "business automation",
-      "startup development",
-      "enterprise applications",
-      "automotive platform development",
-      "e-commerce solutions",
-      "food delivery platforms",
-      "rental management systems",
-      "data visualization",
-      "analytics platforms",
-      "professional software development",
-      "experienced developers",
-      "innovative solutions",
-      "reliable tech partner",
-      "QMind Tech",
-      "Qmindtech",
-      "qmindtech"
-    ]
-  }
+    "title": "",
+    "description": "",
+    "keywords": []
+  },
+  "readMore": "Read More"
 }

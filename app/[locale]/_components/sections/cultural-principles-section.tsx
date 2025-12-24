@@ -1,9 +1,9 @@
 import React from 'react'
 import { getTranslations } from 'next-intl/server'
 import CulturalCard from '../cultural-card';
-export const CulturalPrinciplesSection = async ({ locale }: { locale: string }) => {
+export const CulturalPrinciplesSection = async () => {
 
-    const t = await getTranslations({ locale, namespace: 'culturalPrinciplesSection' });
+    const t = await getTranslations('culturalPrinciplesSection');
     const indices = Array.from({ length: 7 }, (_, i) => (i + 1).toString());
     return (
         <section className={'pt-16 md:pt-32 w-full '}>

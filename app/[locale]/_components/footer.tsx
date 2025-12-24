@@ -6,107 +6,80 @@ import {
     IconBrandInstagram,
     IconCode,
     IconRocket,
-    IconBrandFacebook
+    IconBrandFacebook,
+    IconBrandFacebookFilled
 } from "@tabler/icons-react";
 import { Link } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import Logo from "./icons/logo";
+import LogoDark from "./icons/logoDark";
+import { Button } from "@/components/ui/button";
 
 export default async function Footer({ locale }: { locale: string }) {
     const t = await getTranslations({ locale, namespace: "footer" });
 
     // Fetching localized links directly from translations
-    const servicesLinks = t.raw("sections.services.links");
-    const companyLinks = t.raw("sections.company.links");
+    const servicesLinks = t.raw("sections.sections.links");
+    const importantLinks = t.raw("sections.importantLinks.links");
 
     const socialLinks = [
         {
             icon: IconBrandFacebook,
-            href: "https://www.facebook.com/QmindTech",
+            href: "https://www.facebook.com/p/وزارة-الثقافة-السورية-61574722665055/",
             label: t("social.facebook"),
             color: "hover:text-blue-400"
         },
         {
             icon: IconBrandInstagram,
-            href: "https://instagram.com/qmindtech_",
+            href: "https://www.instagram.com/mocsyr/",
             label: t("social.instagram"),
             color: "hover:text-pink-400"
-        },
-        {
-            icon: IconBrandLinkedin,
-            href: "https://www.linkedin.com/company/qmindtech",
-            label: t("social.linkedin"),
-            color: "hover:text-blue-500"
-        },
+        }
     ];
 
     return (
         <footer className="relative bg-primary border-t overflow-hidden">
+            <div className="bg-primary w-full">
+                <img src="/svg/nav-shape.svg" alt="nav-shape" className="lg:h-fit h-full w-full object-fill" />
+            </div>
             {/* Background Effects */}
             <div
                 className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
             <div className="absolute top-0 left-1/3 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-1/3 w-72 h-72 bg-secondary/5 rounded-full blur-3xl" />
 
             <div className="container relative z-10">
                 {/* Main Footer Content */}
                 <div className="pt-16 pb-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-8 gap-8 mb-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-8 mb-6">
 
-                        {/* Company Info */}
+                        {/* Logo & Copy Right */}
                         <div className="lg:col-span-2 space-y-6">
                             <div className="space-y-4">
-                                <Link href={'/'} aria-label={'Go to homepage'}><Logo className={'w-48'} /></Link>
+                                <Link href={'/'} aria-label={'Go to homepage'}><LogoDark /></Link>
+                            </div>
+                            <div className="flex items-center gap-2 text-gray-400 text-sm">
+                                {t.rich('copyright', {
+                                    year: new Date().getFullYear(),
+
+                                    br: () => <br />
+                                })}
                             </div>
 
-                            {/* Contact Quick Info */}
-                            <div className="space-y-3">
-                                <div className="flex items-center gap-3 text-gray-400 transition-colors">
-                                    <IconMapPin
-                                        className="w-4 h-4 text-primary transition-transform" />
-                                    <span className="text-sm">{t("contact.address")}</span>
-                                </div>
-                                <div className="flex items-center gap-3 text-gray-400 transition-colors">
-                                    <IconPhone
-                                        className="w-4 h-4 text-primary transition-transform" />
-                                    <span className="text-sm" dir={'ltr'}>+963 111 111 111</span>
-                                </div>
-                                <div className="flex items-center gap-3 text-gray-400 transition-colors">
-                                    <IconMail
-                                        className="w-4 h-4 text-primary transition-transform" />
-                                    <span className="text-sm">info@qmindtech.net</span>
-                                </div>
-                            </div>
 
-                            {/* Social Links */}
-                            <div className="flex gap-4">
-                                {socialLinks.map((social) => (
-                                    <a
-                                        key={social.label}
-                                        href={social.href}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={`w-10 h-10 bg-gray-800/50 rounded-lg flex items-center justify-center text-gray-400 ${social.color} transition-all duration-300 hover:scale-110 hover:bg-gray-700/50 border border-gray-700/30`}
-                                        aria-label={social.label}
-                                    >
-                                        <social.icon className="w-5 h-5" />
-                                    </a>
-                                ))}
-                            </div>
+
                         </div>
 
-                        {/* Services */}
+                        {/* Sections */}
                         <div className="lg:col-span-1">
-                            <h4 className="text-white font-semibold mb-4 flex items-center gap-2">
-                                <IconCode className="w-4 h-4 text-primary" />
-                                {t("sections.services.title")}
+                            <h4 className="text-gold font-semibold mb-4 flex items-center gap-2">
+                                {t("sections.sections.title")}
                             </h4>
                             <ul className="space-y-2">
                                 {servicesLinks.map((link: any, index: number) => (
                                     <li key={index}>
                                         <Link
                                             href={link.href}
-                                            className="text-gray-400 hover:text-white text-sm transition-colors hover:translate-x-1 inline-block duration-300"
+                                            className="text-white text-sm transition-colors hover:translate-x-1 inline-block duration-300"
                                         >
                                             {link.label}
                                         </Link>
@@ -115,18 +88,17 @@ export default async function Footer({ locale }: { locale: string }) {
                             </ul>
                         </div>
 
-                        {/* Company */}
+                        {/* Important Links */}
                         <div className="lg:col-span-1">
-                            <h4 className="text-white font-semibold mb-4 flex items-center gap-2">
-                                <IconRocket className="w-4 h-4 text-primary" />
-                                {t("sections.company.title")}
+                            <h4 className="text-gold  font-semibold mb-4 flex items-center gap-2">
+                                {t("sections.importantLinks.title")}
                             </h4>
                             <ul className="space-y-2">
-                                {companyLinks.map((link: any, index: number) => (
+                                {importantLinks.map((link: any, index: number) => (
                                     <li key={index}>
                                         <Link
                                             href={link.href}
-                                            className="text-gray-400 hover:text-white text-sm transition-colors hover:translate-x-1 inline-block duration-300"
+                                            className="text-white  text-nowrap  text-sm transition-colors hover:translate-x-1 inline-block duration-300"
                                         >
                                             {link.label}
                                         </Link>
@@ -134,24 +106,34 @@ export default async function Footer({ locale }: { locale: string }) {
                                 ))}
                             </ul>
                         </div>
-                    </div>
-                </div>
+                        {/* Contact */}
+                        <div className="lg:col-span-1">
+                            <h4 className="text-gold  text-nowrap font-semibold mb-4 flex items-center gap-2">
+                                {t("social.title")}
+                            </h4>
+                            <div className="flex gap-4">
+                                <Button asChild size={"icon"} variant="outline" className="bg-transparent border-[0.8px] text-white hover:text-primary border-white shadow-none rounded-md [&_svg]:size-6  ">
+                                    <Link href={"#"}>
+                                        <IconBrandInstagram />
+                                    </Link>
+                                </Button>
+                                <Button asChild size={"icon"} variant="outline" className="bg-transparent border-[0.8px] text-white hover:text-primary border-white shadow-none rounded-md [&_svg]:size-6">
+                                    <Link href={"#"}>
+                                        <IconBrandFacebookFilled />
+                                    </Link>
+                                </Button>
 
-                {/* Bottom Bar */}
-                <div className="border-t border-gray-700/50 pt-4 md:py-6">
-                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                        <div className="flex items-center gap-2 text-gray-400 text-sm">
-                            <span>{t("copyright", { year: new Date().getFullYear() })}</span>
-                        </div>
-
-                        <div className="flex items-center gap-4">
-                            <div className="hidden md:flex items-center gap-2 text-gray-400 text-xs">
-                                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                                {t("status.operational")}
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+
+            </div>
+
+            <div className="bg-primary w-full">
+                <img src="/svg/nav-shape.svg" alt="nav-shape" className="lg:h-fit h-full w-full object-fill" />
             </div>
         </footer>
     );

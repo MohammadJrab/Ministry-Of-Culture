@@ -5,8 +5,8 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { IconSearch } from '@tabler/icons-react';
 
-const SearchBar = async ({ locale }: { locale: string }) => {
-    const t = await getTranslations({ locale, namespace: 'search' });
+const SearchBar = async () => {
+    const t = await getTranslations('search');
     return (
         <div className="flex items-center gap-3 w-full mt-8" dir="ltr">
             <Button

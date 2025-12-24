@@ -19,10 +19,9 @@ interface UnescoItem {
 
 interface UnescoCarouselProps {
     items: UnescoItem[]
-    locale: string
 }
 
-export function UnescoCarousel({ items, locale }: UnescoCarouselProps) {
+export function UnescoCarousel({ items }: UnescoCarouselProps) {
     const [api, setApi] = React.useState<CarouselApi>()
     const [current, setCurrent] = React.useState(0)
     const [count, setCount] = React.useState(0)
@@ -43,14 +42,12 @@ export function UnescoCarousel({ items, locale }: UnescoCarouselProps) {
     return (
         <div
             className="flex flex-col items-start gap-6 w-full"
-            dir={locale === 'ar' ? 'rtl' : 'ltr'}
         >
             <Carousel
                 setApi={setApi}
                 opts={{
                     align: "start",
                     loop: true,
-                    direction: locale === 'ar' ? 'rtl' : 'ltr',
                 }}
                 className="w-full"
             >
@@ -69,7 +66,7 @@ export function UnescoCarousel({ items, locale }: UnescoCarouselProps) {
                                     />
                                 </div>
 
-                                <div className={cn("flex flex-col gap-2", locale === 'ar' ? 'text-right' : 'text-left')}>
+                                <div className={cn("flex flex-col gap-2")}>
                                     <h3 className="text-lg font-semibold">{item.title}</h3>
                                     <p className="text-[#A48E68] font-semibold text-lg">{item.year}</p>
                                 </div>

@@ -4,8 +4,8 @@ import { getTranslations } from 'next-intl/server';
 import { IconArrowForwardUpDouble, IconArrowRight } from '@tabler/icons-react';
 import { UnescoCarousel } from './UnescoCarousel';
 
-const TheUnescoSection = async ({ locale }: { locale: string }) => {
-    const t = await getTranslations({ locale, namespace: 'theUnesco' });
+const TheUnescoSection = async () => {
+    const t = await getTranslations('theUnesco');
 
     const indices = Array.from({ length: 5 }, (_, i) => i.toString());
 
@@ -50,7 +50,7 @@ const TheUnescoSection = async ({ locale }: { locale: string }) => {
 
                     {/* Left: Description Card */}
                     <div
-                        dir={locale === 'ar' ? 'rtl' : 'ltr'}
+
                         className="relative bg-gradient-to-br from-[rgba(185,167,121,0.39)] to-[rgba(185,167,121,0.1)] backdrop-blur-md border border-white/20 p-8 rounded-2xl "
                     >
                         <div className="absolute top-4 left-4 w-12 h-12 border-t-2 border-l-2 border-white/50 rounded-tl-lg" />
@@ -69,7 +69,7 @@ const TheUnescoSection = async ({ locale }: { locale: string }) => {
                     {/* Right: Slider */}
                     <UnescoCarousel
                         items={items}
-                        locale={locale}
+                      
                     />
 
                 </div>

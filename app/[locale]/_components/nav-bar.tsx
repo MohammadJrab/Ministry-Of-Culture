@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { IconArrowBearLeft, IconCalendar, IconMenuDeep } from "@tabler/icons-react";
+import { IconArrowBearLeft, IconArrowUpLeft, IconCalendar, IconMenuDeep } from "@tabler/icons-react";
 import LanguageSelector from "@/components/language-selector";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
@@ -17,19 +17,19 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
     {
-        href: "#home",
+        href: "/",
         label: "home",
     },
     {
-        href: "#about-ministry",
+        href: "/about-ministry",
         label: "aboutMinistry",
     },
     {
-        href: "#international-participation",
+        href: "/international-participation",
         label: "internationalParticipation",
     },
     {
-        href: "#contact-us",
+        href: "/contact-us",
         label: "contactUs",
     },
 ];
@@ -56,8 +56,11 @@ export function Navbar() {
 
                         {/* <!-- Mobile --> */}
                         <div className="flex items-center lg:hidden">
-                            <Button asChild>
-                                <Link href={'#contact-us'}>{t('contact')}</Link>
+                            <Button className="bg-lightBlack">
+                                <Link href={'https://events.moc.gov.sy/'} target="_blank">{t('events')}</Link>
+                                <div className="rounded-full size-7 flex items-center justify-center bg-white">
+                                    <IconArrowUpLeft className="text-lightBlack" stroke={2} />
+                                </div>
                             </Button>
 
                             <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -122,7 +125,7 @@ export function Navbar() {
                         <Button className={'max-lg:hidden bg-lightBlack rounded-full'} >
                             <Link href={'https://moc.gov.sy/'} target="_blank">{t('events')}</Link>
                             <div className="rounded-full size-7 flex items-center justify-center bg-white">
-                                <IconArrowBearLeft className="text-lightBlack" stroke={4} />
+                                <IconArrowUpLeft className="text-lightBlack" stroke={2} />
 
                             </div>
                         </Button>
