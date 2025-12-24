@@ -211,16 +211,23 @@
     "title": "تواصل مع الوزارة",
     "faxLabel": "فاكس",
     "mapAlt": "خريطة موقع مكتبنا",
-    "nameLabel": "الاسم",
+    "nameLabel": "اسمك بالكامل",
     "namePlaceholder": "اسمك الكامل",
     "emailLabel": "البريد الإلكتروني",
     "emailPlaceholder": "example@domain.com",
     "phoneLabel": "رقم الهاتف",
     "phonePlaceholder": "رقم هاتفك للتواصل",
+    "subjectLabel": "الموضوع",
     "messageLabel": "الرسالة",
     "messagePlaceholder": "أدخل رسالتك أو استفسارك",
     "sendButton": "إرسال الرسالة",
-    "emailSubject": "رسالة جديدة من نموذج الاتصال بالموقع"
+    "emailSubject": "رسالة جديدة من نموذج الاتصال بالموقع",
+    "writeHere": "اكتب هنا...",
+    "byPhone": "عبر الهاتف",
+    "byEmail": "عبر البريد",
+    "address": "العنوان",
+    "addressLine1": "دمشق - ساحة المرجة",
+    "addressLine2": "شارع القهاوي"
   },
   "metadata": {
     "home": {

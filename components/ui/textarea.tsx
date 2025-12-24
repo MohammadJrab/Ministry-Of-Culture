@@ -12,7 +12,7 @@ export const textareaVariants = cva(
             },
             variant: {
                 outline:
-                    "border border-border bg-background focus-visible:border-primary aria-invalid:ring-destructive aria-invalid:ring-1",
+                    "border border-[#DDDDDD] bg-background focus-visible:border-primary aria-invalid:ring-destructive aria-invalid:ring-1",
                 filled:
                     "border border-transparent bg-secondary dark:bg-primary-foreground focus-within:border-primary focus-within:ring-primary text-secondary-foreground dark:text-background focus-within:ring-1 transition-[border-color,box-shadow] border-transparent duration-300",
                 underlined:
@@ -29,7 +29,7 @@ export const textareaVariants = cva(
 
 export interface TextareaProps
     extends React.TextareaHTMLAttributes<HTMLTextAreaElement>,
-        VariantProps<typeof textareaVariants> {}
+    VariantProps<typeof textareaVariants> { }
 
 const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
     ({ className, variant, rounded, ...props }, ref) => {

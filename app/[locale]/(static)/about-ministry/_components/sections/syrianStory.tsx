@@ -3,7 +3,7 @@ import Image from "next/image";
 export default async function SyrianStorySection() {
     const t = await getTranslations('syrianStorySection');
 
-    return (
+    return ( 
         <section className="container min-h-screen relative flex flex-col justify-center lg:justify-start" id={"ourMessageSection"}>
             {/* << */}
             <div className="flex gap-4 items-center mt-14 w-full justify-center lg:justify-center" >

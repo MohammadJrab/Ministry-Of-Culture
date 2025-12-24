@@ -211,16 +211,23 @@
     "title": "Contact with Ministry",
     "faxLabel": "Fax",
     "mapAlt": "Map of our office location",
-    "nameLabel": "Name",
+    "nameLabel": "Full Name",
     "namePlaceholder": "Your Full Name",
     "emailLabel": "Email",
     "emailPlaceholder": "example@domain.com",
     "phoneLabel": "Phone Number",
     "phonePlaceholder": "Your contact number",
+    "subjectLabel": "Subject",
     "messageLabel": "Message",
     "messagePlaceholder": "Enter your message or inquiry",
     "sendButton": "Send Message",
-    "emailSubject": "New message from website contact form"
+    "emailSubject": "New message from website contact form",
+    "writeHere": "Write here...",
+    "byPhone": "By Phone",
+    "byEmail": "By Email",
+    "address": "Address",
+    "addressLine1": "Damascus - Marjeh Square",
+    "addressLine2": "Al-Qahawi Street"
   },
   "metadata": {
     "home": {
