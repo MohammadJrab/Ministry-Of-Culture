@@ -29,13 +29,13 @@ export default async function HeroSection() {
                     <div className="flex gap-4 items-center mt-5 w-full justify-center lg:justify-start" >
                         <div className="flex w-16 md:w-32 lg:w-60 h-1 bg-secondary">
                         </div>
-                        <div className="flex items-center px-4 py-2 border-2  rounded-[16px] justify-center bg-lightBlack">
-                            <h1 className="text-white text-nowrap ">{t('metadata.home.appName')}</h1>
+                        <div className="flex items-center px-6 py-2   rounded-[16px] justify-center bg-lightBlack">
+                            <h1 className="text-white text-nowrap ">{t('hero.badgeText')}</h1>
                         </div>
                         <div className="flex w-16 md:w-32 lg:w-60 h-1 bg-secondary">
                         </div>
                     </div>
-                    <SearchBar  />
+                    <SearchBar />
                 </div>
                 <div className="flex w-full lg:w-fit mx-auto flex-col-reverse lg:flex-col items-center  lg:order-0 gap-4">                {/* Follow US */}
                     <div className="flex gap-4 self-center lg:self-start items-center">

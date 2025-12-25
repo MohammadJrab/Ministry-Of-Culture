@@ -22,7 +22,7 @@ export default async function AboutMinistryHero() {
                         <div className="flex w-16 md:w-32 lg:w-60 h-1 bg-secondary">
                         </div>
                         <div className="flex items-center px-4 py-2 border-2  rounded-[16px] justify-center bg-lightBlack">
-                            <h1 className="text-white text-nowrap ">{t('metadata.home.appName')}</h1>
+                            <h1 className="text-white text-nowrap ">{t('hero.badgeText')}</h1>
                         </div>
                         <div className="flex w-16 md:w-32 lg:w-60 h-1 bg-secondary">
                         </div>
