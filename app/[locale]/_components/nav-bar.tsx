@@ -50,18 +50,13 @@ export function Navbar() {
                 <div className="w-full bg-white shadow-md">
                     <div className="container h-16 flex justify-between items-center">
                         <Link href="#home" aria-label="Go to homepage" className='group w-24 relative'>
-                            <Logo className="transition-opacity group-hover:opacity-0 duration-300" />
+                            <Logo className="transition-opacity group-hover:opacity-0 duration-300 max-sm:scale-86" />
 
                         </Link>
 
                         {/* <!-- Mobile --> */}
                         <div className="flex items-center lg:hidden">
-                            <Button className="bg-lightBlack">
-                                <Link href={'https://events.moc.gov.sy/'} target="_blank">{t('events')}</Link>
-                                <div className="rounded-full size-7 flex items-center justify-center bg-white">
-                                    <IconArrowUpLeft className="text-lightBlack ltr:-scale-x-100" stroke={2} />
-                                </div>
-                            </Button>
+
 
                             <Sheet open={isOpen} onOpenChange={setIsOpen}>
                                 <SheetTrigger asChild className={'lg:hidden'} onClick={() => setIsOpen(!isOpen)}>
@@ -79,7 +74,7 @@ export function Navbar() {
                                         <SheetHeader className="mb-4 ml-4">
                                             <SheetTitle className="flex items-center">
                                                 <Link href="/" aria-label="Go to homepage" onClick={() => setIsOpen(false)}>
-                                                    <Logo />
+                                                    <Logo className="max-sm:scale-86" />
                                                 </Link>
                                             </SheetTitle>
                                         </SheetHeader>
@@ -96,7 +91,15 @@ export function Navbar() {
                                                     <Link href={href}>{t(label)}</Link>
                                                 </Button>
                                             ))}
-                                            <div className="h-[1px] w-full bg-foreground/40 my-2" />
+
+                                            <div className="h-[1px]  w-full bg-foreground/40 my-2" />
+                                            <Button className={'bg-lightBlack  w-fit  py-5 rounded-full'} >
+                                                <Link href={'https://moc.gov.sy/'} target="_blank">{t('events')}</Link>
+                                                <div className="rounded-full size-7  flex items-center justify-center bg-white">
+                                                    <IconArrowUpLeft className="text-lightBlack ltr:-scale-x-100" stroke={2} />
+
+                                                </div>
+                                            </Button>
                                             <LanguageSelector />
                                         </div>
                                     </div>

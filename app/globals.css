@@ -234,6 +234,7 @@
     --foreground: oklch(0.141 0.005 285.823);
     --gold: oklch(60.2% 0.065 83);
     --lightBlack: oklch(42.7% 0 0);
+    --lightPrimaryGreen: oklch(0.548 0.096 195.8);
 }
 
 .dark {
@@ -270,7 +271,7 @@
     --sidebar-ring: oklch(0.552 0.016 285.938);
     --gold: oklch(60.2% 0.065 83);
     --lightBlack: oklch(42.7% 0 0);
-
+    --lightPrimaryGreen: oklch(0.548 0.096 195.8);
 
 }
 
@@ -316,6 +317,7 @@
     --color-lightBlack: var(--lightBlack);
     --color-gold: var(--gold);
     --color-lightBlack: var(--lightBlack);
+    --color-lightPrimaryGreen: var(--lightPrimaryGreen);
 
 }
 
