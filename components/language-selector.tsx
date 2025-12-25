@@ -28,7 +28,7 @@ export default function LanguageSelector({ size = 'sm' }: LanguageSelectorProps)
     }
 
     return (
-        <DropdownMenu modal={isMobile}>
+        <DropdownMenu modal={isMobile} >
             <DropdownMenuTrigger asChild>
                 <Button
                     id="language-dropdown-button"
@@ -41,7 +41,7 @@ export default function LanguageSelector({ size = 'sm' }: LanguageSelectorProps)
                     {t(currentLocale)}<IconChevronDown />
                 </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent>
+            <DropdownMenuContent >
                 <DropdownMenuItem onClick={() => handleLocaleChange("en")}>
                     {t("en")}
                 </DropdownMenuItem>

@@ -16,7 +16,7 @@ export function NewsCard({ news, className = '', style, readMoreTitle }: {
         <Link
             href={`/news/${news.id}`}
             style={style}
-            className={cn("group overflow-hidden rounded-xl border-[0.8px] border-card  bg-card shadow-md flex flex-col transition-transform hover:scale-[1.03]", className)}
+            className={cn("group overflow-hidden rounded-xl border bg-card shadow-md flex flex-col transition-transform hover:scale-[1.03]", className)}
         >
             <div className="relative h-56 min-w-[40%]">
                 <Image
