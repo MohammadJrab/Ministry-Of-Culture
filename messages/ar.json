@@ -5,6 +5,7 @@
     "internationalParticipation": "المشاركات الدولية",
     "contactUs": "تواصل معنا",
     "events": "الفعاليات",
+    "news": "الأخبار",
     "ar": "العربية",
     "en": "الإنجليزية"
   },
@@ -79,6 +80,15 @@
     "followUs": "تابعنا على وسائل التواصل الاجتماعي:",
     "quotePart1": "<secondary>”</secondary>نُشكل <secondary>التراث</secondary> <primary>والابتكار</primary> وروح المجتمع...",
     "quotePart2": "فنصوغ معًا مستقبلًا مزدهرًا يليق بالسوريين.<secondary>“</secondary>"
+  },
+  "news": {
+    "title": "{count, plural, =0 {لا توجد أخبار} =1 {خبر واحد} =2 {خبران} few {# أخبار} many {# خبرًا} other {# خبر}}",
+    "latestNews": "آخر الأخبار",
+    "noNewsAvailableTitle": "لا توجد أخبار متاحة",
+    "noNewsAvailableDescription": "لا توجد عناصر إخبارية لعرضها حاليًا. يرجى التحقق مرة أخرى لاحقًا.",
+    "readMore": "إقرأ المزيد",
+    "seeMore": "المزيد من الأخبار",
+    "descriptionTitle": "الوصف"
   },
   "syria": {
     "title": "<primary>سوريا…</primary> قلب العالم وقصة <secondary>تتجدد ...</secondary>",
@@ -229,6 +239,36 @@
     "addressLine1": "دمشق - ساحة المرجة",
     "addressLine2": "شارع القهاوي"
   },
+  "common": {
+    "any": "الكل",
+    "search": "بحث...",
+    "loading": "جارٍ التحميل...",
+    "noResults": "لا توجد نتائج!",
+    "resultsCount": "{count, plural, =1 {1 نتيجة} other {{count} نتائج}}",
+    "noResultsFound": "لا توجد نتائج",
+    "clearFilters": "مسح الفلاتر"
+  },
+  "datePicker": {
+    "triggerTitle": "فلتر التاريخ",
+    "resetButton": "إعادة تعيين",
+    "applyButton": "تطبيق"
+  },
+  "filters": {
+    "categoryTitle": "فلتر الفئة",
+    "cityTitle": "فلتر المدينة",
+    "all": "الكل"
+  },
+  "notFound": {
+    "message": "نعتذر، الصفحة التي طلبتها غير موجودة.",
+    "goHome": "العودة إلى الصفحة الرئيسية"
+  },
+  "errorPage": {
+    "wrong": "حدث خطأ ما!",
+    "tryAgain": "حاول مرة أخرى",
+    "connectionError": "خطأ في الاتصال. يرجى التحقق من اتصالك بالإنترنت والمحاولة مرة أخرى.",
+    "serverUpdating": "تحديث الخادم قيد التقدم. يرجى الانتظار...",
+    "goHome": "العودة إلى الرئيسية"
+  },
   "metadata": {
     "home": {
       "title": "وزارة الثقافة",
@@ -236,9 +276,19 @@
       "appName": "وزارة الثقافة",
       "keywords": []
     },
-    "title": "",
-    "description": "",
-    "keywords": []
+    "newsPage": {
+      "title": "آخر الأخبار والتحديثات | وزارة الثقافة",
+      "description": "ابق على اطلاع بأحدث الأخبار والإعلانات. قم بالتصفية حسب التاريخ واستكشف المقالات الإخبارية ذات الصلة باهتماماتك."
+    },
+    "news": {
+      "title": "{news} ,خبر | وزارة الثقافة",
+      "fallbackTitle": "أخبار | وزارة الثقافة",
+      "description": "اقرأ آخر الأخبار من وزارة الثقافة. اكتشف التفاصيل، وشاهد كيف نشكل المشهد الثقافي."
+    },
+    "notFound": {
+      "title": "404 | وزارة الثقافة",
+      "description": "الصفحة التي تبحث عنها غير موجودة."
+    }
   },
   "readMore": "إقرأ المزيد"
 }

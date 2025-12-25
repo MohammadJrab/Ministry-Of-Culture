@@ -5,6 +5,7 @@
     "internationalParticipation": "International Participation",
     "contactUs": "Contact Us",
     "events": "Events",
+    "news": "News",
     "ar": "Arabic",
     "en": "English"
   },
@@ -79,6 +80,15 @@
     "followUs": "Follow Us On Social Media:",
     "quotePart1": "<secondary>”</secondary>We shape <secondary>Heritage</secondary> and <primary>Innovation</primary> and the spirit of the community...",
     "quotePart2": "So we craft together a prosperous future worthy of Syrians.<secondary>“</secondary>"
+  },
+  "news": {
+    "title": "{count, plural, =0 {No news} one {# news} other {# news}}",
+    "latestNews": "Latest News",
+    "noNewsAvailableTitle": "No News Available",
+    "noNewsAvailableDescription": "There are currently no news items to display. Please check back later.",
+    "readMore": "Read More",
+    "seeMore": "See More News",
+    "descriptionTitle": "Description"
   },
   "syria": {
     "title": "Syria… the heart of the world and a story that keeps repeating itself…",
@@ -229,6 +239,37 @@
     "addressLine1": "Damascus - Marjeh Square",
     "addressLine2": "Al-Qahawi Street"
   },
+  "common": {
+    "any": "Any",
+    "search": "Search...",
+    "loading": "Loading...",
+    "seeMore": "See More",
+    "noResults": "No results!",
+    "resultsCount": "{count} {count, plural, =1 {result} other {results}}",
+    "noResultsFound": "No results found",
+    "clearFilters": "Clear filters"
+  },
+  "datePicker": {
+    "triggerTitle": "Date filter",
+    "resetButton": "Reset",
+    "applyButton": "Apply"
+  },
+  "filters": {
+    "categoryTitle": "Category filter",
+    "cityTitle": "City filter",
+    "all": "All"
+  },
+  "notFound": {
+    "message": "We apologize, but the page you requested cannot be found.",
+    "goHome": "Return to Homepage"
+  },
+  "errorPage": {
+    "wrong": "Something went wrong!",
+    "tryAgain": "Try Again",
+    "connectionError": "Connection error. Please verify your internet connection and retry.",
+    "serverUpdating": "Server update in progress. Please wait...",
+    "goHome": "Go Home"
+  },
   "metadata": {
     "home": {
       "title": "Ministry Of Culture",
@@ -236,9 +277,19 @@
       "appName": "Ministry Of Culture",
       "keywords": []
     },
-    "title": "",
-    "description": "",
-    "keywords": []
+    "newsPage": {
+      "title": "Latest News and Updates | Medad",
+      "description": "Stay informed with the most recent news and announcements. Filter by date and explore news articles relevant to your interests."
+    },
+    "news": {
+      "title": "{news} ,news | Medad",
+      "fallbackTitle": "News | Medad",
+      "description": "Read the latest news from Medad. Discover details, and see how we are shaping the cultural landscape."
+    },
+    "notFound": {
+      "title": "404 | Medad",
+      "description": "The page you're looking for doesn't exist."
+    }
   },
   "readMore": "Read More"
 }
