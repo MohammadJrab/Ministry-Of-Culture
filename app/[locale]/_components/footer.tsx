@@ -40,7 +40,7 @@ export default async function Footer({ locale }: { locale: string }) {
     return (
         <footer className="relative bg-primary border-t overflow-hidden">
             <div className="bg-primary w-full">
-                <img src="/svg/nav-shape.svg" alt="nav-shape" className="lg:h-fit h-full w-full object-fill" />
+                <img src="/svg/nav-shape.svg" alt="nav-shape" className="w-full h-auto object-cover" />
             </div>
             {/* Background Effects */}
             <div
@@ -49,15 +49,15 @@ export default async function Footer({ locale }: { locale: string }) {
 
             <div className="container relative z-10">
                 {/* Main Footer Content */}
-                <div className="pt-16 pb-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-8 mb-6">
+                <div className="py-12 md:pt-16 md:pb-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-8 mb-6 text-center md:text-start">
 
                         {/* Logo & Copy Right */}
-                        <div className="lg:col-span-2 space-y-6">
+                        <div className="lg:col-span-2 space-y-6 flex flex-col items-center md:items-start">
                             <div className="space-y-4">
                                 <Link href={'/'} aria-label={'Go to homepage'}><LogoDark /></Link>
                             </div>
-                            <div className="flex items-center gap-2 text-gray-400 text-sm">
+                            <div className="text-gray-400 text-sm">
                                 {t.rich('copyright', {
                                     year: new Date().getFullYear(),
 
@@ -71,7 +71,7 @@ export default async function Footer({ locale }: { locale: string }) {
 
                         {/* Sections */}
                         <div className="lg:col-span-1">
-                            <h4 className="text-gold font-semibold mb-4 flex items-center gap-2">
+                            <h4 className="text-gold font-semibold mb-4 flex items-center justify-center md:justify-start gap-2">
                                 {t("sections.sections.title")}
                             </h4>
                             <ul className="space-y-2">
@@ -90,7 +90,7 @@ export default async function Footer({ locale }: { locale: string }) {
 
                         {/* Important Links */}
                         <div className="lg:col-span-1">
-                            <h4 className="text-gold  font-semibold mb-4 flex items-center gap-2">
+                            <h4 className="text-gold  font-semibold mb-4 flex items-center justify-center md:justify-start gap-2">
                                 {t("sections.importantLinks.title")}
                             </h4>
                             <ul className="space-y-2">
@@ -98,7 +98,7 @@ export default async function Footer({ locale }: { locale: string }) {
                                     <li key={index}>
                                         <Link
                                             href={link.href}
-                                            className="text-white  text-nowrap  text-sm transition-colors hover:translate-x-1 inline-block duration-300"
+                                            className="text-white text-sm transition-colors hover:translate-x-1 inline-block duration-300"
                                         >
                                             {link.label}
                                         </Link>
@@ -107,8 +107,8 @@ export default async function Footer({ locale }: { locale: string }) {
                             </ul>
                         </div>
                         {/* Contact */}
-                        <div className="lg:col-span-1">
-                            <h4 className="text-gold  text-nowrap font-semibold mb-4 flex items-center gap-2">
+                        <div className="lg:col-span-1 flex flex-col items-center md:items-start">
+                            <h4 className="text-gold font-semibold mb-4 flex items-center justify-center md:justify-start gap-2">
                                 {t("social.title")}
                             </h4>
                             <div className="flex gap-4">
@@ -133,7 +133,7 @@ export default async function Footer({ locale }: { locale: string }) {
             </div>
 
             <div className="bg-primary w-full">
-                <img src="/svg/nav-shape.svg" alt="nav-shape" className="lg:h-fit h-full w-full object-fill" />
+                <img src="/svg/nav-shape.svg" alt="nav-shape" className="w-full h-auto object-cover" />
             </div>
         </footer>
     );

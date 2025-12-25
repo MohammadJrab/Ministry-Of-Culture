@@ -18,8 +18,8 @@ export async function NationalCulturalIdentitySection() {
                     className="object-cover  object-center"
                 />
             </div>
+            <div className="absolute inset-0 z-10 bg-gradient-to-b from-[rgba(43,49,48,0.72)] to-[rgba(66,129,119,0.72)]" />
 
- 
             <div className="relative z-20 container mx-auto end-0 md:py-32 h-full flex flex-col justify-center">
 
                 <div className="text-center">

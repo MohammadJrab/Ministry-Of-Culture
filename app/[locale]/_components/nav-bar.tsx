@@ -44,7 +44,7 @@ export function Navbar() {
 
             <header className="fixed inset-x-0 top-0 z-20 flex flex-col w-full">
                 <div className="bg-primary w-full">
-                    <img src="/svg/nav-shape.svg" alt="nav-shape" className="lg:h-fit h-full w-full object-fill" />
+                    <img src="/svg/nav-shape.svg" alt="nav-shape" className="w-full h-auto object-cover" />
                 </div>
 
                 <div className="w-full bg-white shadow-md">
@@ -59,7 +59,7 @@ export function Navbar() {
                             <Button className="bg-lightBlack">
                                 <Link href={'https://events.moc.gov.sy/'} target="_blank">{t('events')}</Link>
                                 <div className="rounded-full size-7 flex items-center justify-center bg-white">
-                                    <IconArrowUpLeft className="text-lightBlack" stroke={2} />
+                                    <IconArrowUpLeft className="text-lightBlack ltr:-scale-x-100" stroke={2} />
                                 </div>
                             </Button>
 
@@ -125,7 +125,7 @@ export function Navbar() {
                         <Button className={'max-lg:hidden bg-lightBlack rounded-full'} >
                             <Link href={'https://moc.gov.sy/'} target="_blank">{t('events')}</Link>
                             <div className="rounded-full size-7 flex items-center justify-center bg-white">
-                                <IconArrowUpLeft className="text-lightBlack" stroke={2} />
+                                <IconArrowUpLeft className="text-lightBlack ltr:-scale-x-100" stroke={2} />
 
                             </div>
                         </Button>
