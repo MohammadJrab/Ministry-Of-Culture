@@ -1,21 +1,18 @@
 import React from 'react'
 import { getTranslations } from 'next-intl/server'
 import Image from "next/image";
-import { Button } from '@/components/ui/button';
-import { Link } from '@/components/ui/link';
-import { IconBrandFacebook, IconBrandInstagram } from '@tabler/icons-react';
 
 export default async function AboutMinistryHero() {
     const t = await getTranslations();
     return (
-        <section className=" container min-h-screen relative flex flex-col lg:mt-28 justify-center lg:justify-start" id={"home"}>
+        <section className=" container min-h-screen relative flex flex-col lg:mt-20 justify-center lg:justify-start" id={"home"}>
 
-            <div className="grid  grid-cols-1 lg:grid-cols-2 justify-center gap-10 mx-auto mt-24 lg:mt-60 items-center">
-                <div className="flex flex-col justify-center items-center lg:items-start lg:ms-11 text-center lg:text-start">
-                    <h3 className="text-xl text-gold md:text-3xl font-[400s] leading-normal ">
+            <div className="grid  grid-cols-1 lg:grid-cols-2 justify-center gap-10 mx-auto  lg:mt-60 items-center">
+                <div className="flex flex-col justify-center items-center lg:items-start lg:ms-11  lg:text-start">
+                    <h3 className="text-xl text-gold md:text-3xl text-start font-[400s] leading-normal ">
                         {t('aboutMinistry.hero.title')}
                     </h3>
-                    <p className="text-2xl text-foreground mt-5">
+                    <p className="text-2xl text-center text-foreground mt-5">
                         {t('aboutMinistry.hero.description')}
                     </p>
                     <div className="flex gap-4 items-center mt-14 w-full justify-center lg:justify-start" >
@@ -33,7 +30,7 @@ export default async function AboutMinistryHero() {
 
                     <Image
                         src="/images/about-hero-image.png"
-                        width={500}
+                        width={700}
                         height={500}
                         alt="Picture of the author"
                     />

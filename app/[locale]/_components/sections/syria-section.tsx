@@ -16,7 +16,7 @@ export default async function SyriaSection() {
                         })}
 
                     </h3>
-                    <p className="text-lg font-normal mt-12">{t('description')}</p>
+                    <p className="text-lg font-normal mt-6">{t('description')}</p>
                 </div>
             </div>
         </section>

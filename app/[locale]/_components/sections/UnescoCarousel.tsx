@@ -19,12 +19,15 @@ interface UnescoItem {
 
 interface UnescoCarouselProps {
     items: UnescoItem[]
+    locale: string
 }
 
-export function UnescoCarousel({ items }: UnescoCarouselProps) {
+export function UnescoCarousel({ items, locale }: UnescoCarouselProps) {
     const [api, setApi] = React.useState<CarouselApi>()
     const [current, setCurrent] = React.useState(0)
     const [count, setCount] = React.useState(0)
+
+    const dir = locale === 'ar' ? 'rtl' : 'ltr'
 
     React.useEffect(() => {
         if (!api) {
@@ -41,13 +44,14 @@ export function UnescoCarousel({ items }: UnescoCarouselProps) {
 
     return (
         <div
-            className="flex flex-col items-start gap-6 w-full"
+            className="flex flex-col items-start gap-6 w-full "
         >
             <Carousel
                 setApi={setApi}
                 opts={{
                     align: "start",
                     loop: true,
+                    direction: dir,
                 }}
                 className="w-full"
             >
@@ -78,13 +82,13 @@ export function UnescoCarousel({ items }: UnescoCarouselProps) {
             </Carousel>
 
             {/* Pagination */}
-            <div className="flex items-center justify-center gap-4 w-full md:w-64" dir="ltr">
+            <div className="flex items-center justify-center gap-4 w-full md:w-64">
                 <button
                     onClick={() => api?.scrollPrev()}
                     className="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
                 >
                     <span className="sr-only">Previous</span>
-                    <IconArrowLeft className="w-5 h-5" />
+                    <IconArrowLeft className={cn("w-5 h-5", dir === 'rtl' && "rotate-180")} />
                 </button>
 
                 <div className="w-10 h-10 rounded-full bg-[#00695C] flex items-center justify-center text-white font-bold">
@@ -96,7 +100,7 @@ export function UnescoCarousel({ items }: UnescoCarouselProps) {
                     className="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
                 >
                     <span className="sr-only">Next</span>
-                    <IconArrowRight className="w-5 h-5" />
+                    <IconArrowRight className={cn("w-5 h-5", dir === 'rtl' && "rotate-180")} />
                 </button>
             </div>
         </div>

@@ -19,7 +19,7 @@ export default async function NewsDetailsPage({ params }: { params: Promise<{ id
 
     return (
         <section
-            className={'container pt-20 pb-8 md:pt-48 md:pb-16  grid md:grid-cols-2 gap-4 md:gap-8 animate-appear'}>
+            className={'container mt-4 md:mt-0 pt-20 pb-8 md:pt-48 md:pb-16  grid md:grid-cols-2 gap-4 md:gap-8 animate-appear'}>
 
             {/* Gallery Section */}
             <Carousel imgUrls={news.imgUrls} />

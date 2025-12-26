@@ -10,7 +10,7 @@ export default async function ContactUsSection() {
     const t = await getTranslations('contactUs');
 
     return (
-        <section className="container xl:max-w-[1200px] my-32 scroll-m-24" id={'contact-us'}>
+        <section className="container xl:max-w-[1200px] mt-20 mb-20 md:my-32 scroll-m-24" id={'contact-us'}>
             <div
                 className="flex flex-col lg:flex-row items-stretch w-full shadow-xl rounded-3xl overflow-hidden relative">
 

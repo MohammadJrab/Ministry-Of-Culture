@@ -98,7 +98,7 @@ export function Navbar() {
 
                                             <div className="h-[1px]  w-full bg-foreground/40 my-2" />
                                             <Button className={'bg-lightBlack  w-fit  py-5 rounded-full'} >
-                                                <Link href={'https://moc.gov.sy/'} target="_blank">{t('events')}</Link>
+                                                <Link href={'http://events.moc.gov.sy'} target="_blank">{t('events')}</Link>
                                                 <div className="rounded-full size-7  flex items-center justify-center bg-white">
                                                     <IconArrowUpLeft className="text-lightBlack ltr:-scale-x-100" stroke={2} />
 

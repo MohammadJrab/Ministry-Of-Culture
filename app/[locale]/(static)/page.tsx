@@ -19,7 +19,6 @@ export default async function HomePage() {
                 <CulturalPrinciplesSection />
                 <TheUnescoSection />
                 <VisionSection />
-
             </div>
             <ScrollToTopButton />
         </main>

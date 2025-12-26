@@ -1,31 +1,23 @@
 import {
-    IconMail,
-    IconPhone,
-    IconMapPin,
-    IconBrandLinkedin,
     IconBrandInstagram,
-    IconCode,
-    IconRocket,
     IconBrandFacebook,
     IconBrandFacebookFilled
 } from "@tabler/icons-react";
 import { Link } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
-import Logo from "./icons/logo";
 import LogoDark from "./icons/logoDark";
 import { Button } from "@/components/ui/button";
 
 export default async function Footer({ locale }: { locale: string }) {
     const t = await getTranslations({ locale, namespace: "footer" });
 
-    // Fetching localized links directly from translations
     const servicesLinks = t.raw("sections.sections.links");
     const importantLinks = t.raw("sections.importantLinks.links");
 
     const socialLinks = [
         {
             icon: IconBrandFacebook,
-            href: "https://www.facebook.com/p/وزارة-الثقافة-السورية-61574722665055/",
+            href: "https://www.facebook.com/profile.php?id=61574722665055",
             label: t("social.facebook"),
             color: "hover:text-blue-400"
         },
@@ -113,12 +105,12 @@ export default async function Footer({ locale }: { locale: string }) {
                             </h4>
                             <div className="flex gap-4">
                                 <Button asChild size={"icon"} variant="outline" className="bg-transparent border-[0.8px] text-white hover:text-primary border-white shadow-none rounded-md [&_svg]:size-6  ">
-                                    <Link href={"#"}>
+                                    <Link href={"https://www.instagram.com/mocsyr/"} target="_blank">
                                         <IconBrandInstagram />
                                     </Link>
                                 </Button>
                                 <Button asChild size={"icon"} variant="outline" className="bg-transparent border-[0.8px] text-white hover:text-primary border-white shadow-none rounded-md [&_svg]:size-6">
-                                    <Link href={"#"}>
+                                    <Link href={"https://www.facebook.com/profile.php?id=61574722665055"} target="_blank">
                                         <IconBrandFacebookFilled />
                                     </Link>
                                 </Button>

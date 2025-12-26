@@ -12,8 +12,8 @@ export const OurTasksSection = async () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center max-w-7xl mx-auto">
                 {indices.map((index: string) => (
-                    <div key={index} className='relative flex shadow-sm items-center min-w-[300px] min-h-[110px] justify-center bg-[#F4F6F5] py-8 px-10 rounded-[6px]'>
-                        <label className='text-[#2B2B2B] pe-20 font-medium  text-lg'>{t(`tasks.${index}.title`)}</label>
+                    <div key={index} className='relative flex shadow-sm items-center min-w-[18rem] max-w-[18rem]   min-h-[110px] justify-center bg-[#F4F6F5] py-8 px-10 rounded-[6px]'>
+                        <label className='text-[#2B2B2B] pe-20 font-medium  text-md md:text-lg'>{t(`tasks.${index}.title`)}</label>
                         <img className='absolute top-0 end-4 ' src={"/svg/card-circle" + index + ".svg"} alt="" />
                     </div>
                 ))}

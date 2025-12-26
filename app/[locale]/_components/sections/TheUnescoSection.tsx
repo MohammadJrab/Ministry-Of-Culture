@@ -1,11 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, getLocale } from 'next-intl/server';
 import { IconArrowForwardUpDouble, IconArrowRight } from '@tabler/icons-react';
 import { UnescoCarousel } from './UnescoCarousel';
 
 const TheUnescoSection = async () => {
     const t = await getTranslations('theUnesco');
+    const locale = await getLocale();
 
     const indices = Array.from({ length: 5 }, (_, i) => i.toString());
 
@@ -53,13 +54,13 @@ const TheUnescoSection = async () => {
 
                         className="relative bg-gradient-to-br from-[rgba(185,167,121,0.39)] to-[rgba(185,167,121,0.1)] backdrop-blur-md border border-white/20 p-8 rounded-2xl "
                     >
-                        <div className="absolute top-4 left-4 w-12 h-12 border-t-2 border-l-2 border-white/50 rounded-tl-lg" />
-                        <img src="/svg/unisco_pattern.svg" alt="unisco_pattern" className="object-cover absolute top-0 right-0 size-56" />
+                        <div className="absolute top-4 start-4 w-12 h-12 border-t-2 border-s-2 border-white/50 rounded-ss-lg" />
+                        <img src="/svg/unisco_pattern.svg" alt="unisco_pattern" className="object-cover absolute top-0 end-0 size-56" />
 
                         <p className="text-white text-lg px-8 py-6 md:text-lg whitespace-pre-line leading-relaxed">
                             {t('description')}
                         </p>
-                        <div className={`absolute bottom-4 end-4 bg-[#333] p-3 rounded-lg text-white hover:bg-black transition-colors`}>
+                        <div className={`absolute bottom-4 end-4 bg-[#333] p-3 rounded-lg text-white transition-colors`}>
 
                             <IconArrowForwardUpDouble className="rtl:-scale-x-100" />
 
@@ -69,7 +70,7 @@ const TheUnescoSection = async () => {
                     {/* Right: Slider */}
                     <UnescoCarousel
                         items={items}
-                      
+                        locale={locale}
                     />
 
                 </div>

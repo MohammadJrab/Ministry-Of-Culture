@@ -19,7 +19,7 @@ export default async function NewsPage({ searchParams }: { searchParams: Promise
     if (error) throw error;
 
     return (
-        <section className={'container mt-16  py-24 flex flex-col gap-4 animate-appear'}>
+        <section className={'container md:mt-16  py-24 flex flex-col gap-4 animate-appear'}>
             {/* Header Section */}
             <div className="flex max-sm:flex-col sm:justify-between max-sm:gap-2">
                 <div className="flex items-center justify-between gap-2 w-full">

@@ -12,7 +12,7 @@ export default async function HeroSection() {
 
             <div className="grid  grid-cols-1 lg:grid-cols-2 justify-center gap-10 mx-auto mt-24 lg:mt-60 items-center">
                 <div className="flex flex-col justify-center items-center lg:items-start lg:ms-11 text-center lg:text-start">
-                    <h3 className="text-xl md:text-3xl font-[400s] leading-normal text-foreground max-w-2xl">
+                    <h3 className="text-lg   md:text-3xl font-[400s] leading-normal text-foreground max-w-2xl">
                         {t.rich('hero.quotePart1', {
                             primary: (chunks) => <span className="text-primary">{chunks}</span>,
                             secondary: (chunks) => <span className="text-secondary">{chunks}</span>,

@@ -7,7 +7,7 @@ export default async function OurMessageSection() {
     const t = await getTranslations('ourMessageSection');
 
     return (
-        <section className="container min-h-screen relative flex flex-col justify-center lg:justify-start" id={"ourMessageSection"}>
+        <section className="container  relative flex flex-col justify-center lg:justify-start" id={"ourMessageSection"}>
 
             <div className="grid  grid-cols-1 lg:grid-cols-2 justify-center gap-10 mx-auto mt-24 lg:mt-60 items-center">
 

@@ -154,11 +154,11 @@
     }
   },
   "visionSection": {
-    "quote": "“Vision is neither a slogan nor a <secondary>decision.</secondary>. Today, it stands as the title of recovery, <primary>the restoration of the civilizational narrative, and the building of the future.</primary>”"
+    "quote": "“Vision is neither a slogan nor a <secondary>decision.</secondary>. Today, it stands as the title of recovery, <primary>the restoration of the civilizational narrative, and the building of the future.”</primary>"
   },
   "aboutMinistry": {
     "hero": {
-      "title": "Our Vision",
+      "title": "Our Vision:",
       "description": "To consolidate Syria's position as the heart of the world and to shape a prosperous and renewed future"
     }
   },
@@ -188,13 +188,13 @@
   },
   "syrianStorySection": {
     "header": "The Syrian Story",
-    "title": "Our story is not one of destruction, but of resilience, told from generation to generation…",
+    "title": "Our story <secondary>is not a story of destruction,</secondary> but <primary>determination</primary> told by generation after generation…",
     "description": "The Syrian story is a story that stirs emotions, where pain and hope intertwine. It is a story of struggle between good and evil, between the weak right, which has no supporter but God, and the powerful wrong, which possesses all the tools of killing and destruction. For our story is a lesson from history, a true representation of the noble meanings of humanity.",
     "quote": "We in the Ministry of Culture strive to tell the Syrian story in a manner befitting its importance…"
   },
   "theNewSyriaSection": {
-    "part1": "The <secondary>New Syria...</secondary><br></br>",
-    "part2": "Returns to the world<primary> once again</primary>"
+    "part1": "The <secondary>New Syria...</secondary>",
+    "part2": "Returns to the world<primary>once again</primary>"
   },
   "highlightsOfInternationalParticipations": {
     "title": "Highlights of International Participations",
