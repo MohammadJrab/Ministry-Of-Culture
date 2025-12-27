@@ -1,7 +1,7 @@
 import React from 'react'
 import { getTranslations } from 'next-intl/server'
 import CulturalCard from '../cultural-card';
-import { Motion } from '@/components/motion';
+import { ServerMotion } from '@/components/motion';
 
 export const CulturalPrinciplesSection = async () => {
     const t = await getTranslations('culturalPrinciplesSection');
@@ -15,13 +15,13 @@ export const CulturalPrinciplesSection = async () => {
 
             <div className="flex md:flex-row flex-wrap flex-4 gap-8 justify-center">
                 {indices.map((index: string, i: number) => (
-                    <Motion key={index} animation="fadeUp" staggerIndex={i} hover="lift" viewport="early">
+                    <ServerMotion key={index} animation="fadeUp" staggerIndex={i} hover="lift" viewport="early">
                         <CulturalCard
                             number={index}
                             title={t(`principles.${index}.title`)}
                             description={t(`principles.${index}.description`)}
                         />
-                    </Motion>
+                    </ServerMotion>
                 ))}
             </div>
         </section>

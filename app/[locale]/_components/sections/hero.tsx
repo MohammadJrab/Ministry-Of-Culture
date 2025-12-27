@@ -4,7 +4,7 @@ import { Link } from "@/i18n/routing";
 import { IconBrandFacebook, IconBrandInstagram } from "@tabler/icons-react";
 import Image from "next/image";
 import SearchBar from "../SearchBar";
-import { Motion, MotionItem } from "@/components/motion";
+import { ServerMotion, MotionItem } from "@/components/motion";
 
 export default async function HeroSection() {
     const t = await getTranslations();
@@ -12,7 +12,7 @@ export default async function HeroSection() {
     return (
         <section className="container min-h-screen relative flex flex-col justify-center lg:justify-start" id={"home"}>
 
-            <Motion animation="stagger" trigger="onMount" className="grid grid-cols-1 lg:grid-cols-2 justify-center gap-10 mx-auto mt-24 lg:mt-60 items-center">
+            <ServerMotion animation="stagger" trigger="onMount" className="grid grid-cols-1 lg:grid-cols-2 justify-center gap-10 mx-auto mt-24 lg:mt-60 items-center">
                 <MotionItem className="flex flex-col justify-center items-center lg:items-start lg:ms-11 text-center lg:text-start">
                     <h3 className="text-lg md:text-3xl font-[400s] leading-normal text-foreground max-w-2xl">
                         {t.rich('hero.quotePart1', {
@@ -61,7 +61,7 @@ export default async function HeroSection() {
                         alt="Picture of the author"
                     />
                 </MotionItem>
-            </Motion>
+            </ServerMotion>
 
         </section>
     )

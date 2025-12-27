@@ -1,14 +1,14 @@
 import React from 'react'
 import { getTranslations } from 'next-intl/server'
 import Image from "next/image";
-import { Motion, MotionItem } from "@/components/motion";
+import { ServerMotion, MotionItem } from "@/components/motion";
 
 export default async function AboutMinistryHero() {
     const t = await getTranslations();
     return (
-        <section className="container  relative flex flex-col  justify-center items-center " id={"home"}>
+        <section className="container relative flex flex-col  justify-center items-center " id={"home"}>
 
-            <Motion animation="stagger" trigger="onMount" className="grid grid-cols-1 lg:grid-cols-2 justify-center gap-20 mx-auto lg:mt-60 items-center">
+            <ServerMotion animation="stagger" trigger="onMount" className="mt-30 grid grid-cols-1  lg:grid-cols-2 justify-center gap-20 mx-auto lg:mt-60 items-center">
                 <MotionItem className="flex flex-col justify-center  lg:items-start lg:ms-11 items-start">
                     <h3 className="text-3xl text-gold  md:text-3xl text-start">
                         {t('aboutMinistry.hero.title')}
@@ -33,9 +33,8 @@ export default async function AboutMinistryHero() {
                         className='rounded-2xl'
                     />
                 </MotionItem>
-            </Motion>
+            </ServerMotion>
 
         </section>
     )
 }
-

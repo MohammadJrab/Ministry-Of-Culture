@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { getTranslations, getLocale } from 'next-intl/server';
 import { IconArrowForwardUpDouble, IconArrowRight } from '@tabler/icons-react';
 import { UnescoCarousel } from './UnescoCarousel';
-import { Motion } from '@/components/motion';
+import { ServerMotion } from '@/components/motion';
 
 const TheUnescoSection = async () => {
     const t = await getTranslations('theUnesco');
@@ -51,7 +51,7 @@ const TheUnescoSection = async () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
                     {/* Left: Description Card - Animated */}
-                    <Motion animation="fadeUp">
+                    <ServerMotion animation="fadeUp">
                         <div
                             className="relative bg-gradient-to-br from-[rgba(185,167,121,0.39)] to-[rgba(185,167,121,0.1)] backdrop-blur-md border border-white/20 p-8 rounded-2xl "
                         >
@@ -68,7 +68,7 @@ const TheUnescoSection = async () => {
 
                             </div>
                         </div>
-                    </Motion>
+                    </ServerMotion>
 
                     {/* Right: Slider */}
                     <UnescoCarousel

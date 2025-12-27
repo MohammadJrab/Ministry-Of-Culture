@@ -134,7 +134,6 @@
       "1": {
         "title": "Traditional Aleppo Laurel Soap Craft",
         "year": "2024"
-        
       },
       "2": {
         "title": "Falconry",
@@ -270,21 +269,31 @@
   "metadata": {
     "home": {
       "title": "Ministry Of Culture",
-      "description": "",
+      "description": "The official website of the Ministry of Culture in the Syrian Arab Republic. Discover Syria's rich heritage, cultural events, news, and the ministry's vision for a prosperous future.",
       "appName": "Ministry Of Culture",
-      "keywords": []
+      "keywords": [
+        "Ministry of Culture",
+        "Syria",
+        "Culture",
+        "Heritage",
+        "Events",
+        "News",
+        "Damascus",
+        "Art",
+        "History"
+      ]
     },
     "newsPage": {
-      "title": "Latest News and Updates | Medad",
+      "title": "Latest News and Updates | Ministry Of Culture",
       "description": "Stay informed with the most recent news and announcements. Filter by date and explore news articles relevant to your interests."
     },
     "news": {
-      "title": "{news} ,news | Medad",
-      "fallbackTitle": "News | Medad",
-      "description": "Read the latest news from Medad. Discover details, and see how we are shaping the cultural landscape."
+      "title": "{news} ,news | Ministry Of Culture",
+      "fallbackTitle": "News | Ministry Of Culture",
+      "description": "Read the latest news from Ministry Of Culture. Discover details, and see how we are shaping the cultural landscape."
     },
     "notFound": {
-      "title": "404 | Medad",
+      "title": "404 | Ministry Of Culture",
       "description": "The page you're looking for doesn't exist."
     }
   },

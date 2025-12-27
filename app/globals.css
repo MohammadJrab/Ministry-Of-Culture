@@ -3,7 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-
 @theme {
     /* Colors */
     --color-border: hsl(var(--border));
@@ -49,6 +48,10 @@
     --animate-spin-around: spin-around calc(var(--speed) * 2) infinite linear;
     --animate-appear: appear 0.25s ease-in-out;
     --animate-fade-in-up: fade-in-up 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    --animate-fade-in: fade-in 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    --animate-slide-in-left: slide-in-left 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    --animate-slide-in-right: slide-in-right 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    --animate-scale-in: scale-in 0.7s cubic-bezier(0.16, 1, 0.3, 1);
     --animate-shine: shine var(--duration) infinite linear;
 
     /* Keyframes */
@@ -169,6 +172,52 @@
             transform: translateY(0) scale(1);
         }
     }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slide-in-left {
+        0% {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slide-in-right {
+        0% {
+            opacity: 0;
+            transform: translateX(30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes scale-in {
+        0% {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
 }
 
 /* Custom Utilities for Container */
@@ -207,8 +256,6 @@
     body:lang(ar) {
         font-family: var(--font-changa), sans-serif !important;
     }
-
-
 }
 
 .loader {
@@ -250,7 +297,6 @@
 
 /* Root Variables */
 :root {
-
     --radius: 0.625rem;
     --card: oklch(1 0 0);
     --card-foreground: oklch(0.141 0.005 285.823);
@@ -324,7 +370,6 @@
     --gold: oklch(60.2% 0.065 83);
     --lightBlack: oklch(42.7% 0 0);
     --lightPrimaryGreen: oklch(0.548 0.096 195.8);
-
 }
 
 @theme inline {
@@ -370,5 +415,4 @@
     --color-gold: var(--gold);
     --color-lightBlack: var(--lightBlack);
     --color-lightPrimaryGreen: var(--lightPrimaryGreen);
-
 }

@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "@/components/ui/link";
 import { IconArrowUpLeft } from "@tabler/icons-react";
 import { getTranslations } from "next-intl/server";
-import { Motion } from "@/components/motion";
+import { ServerMotion, MotionItem } from "@/components/motion";
 
 export default async function HighlightsOfInternationalParticipations() {
     const t = await getTranslations();
@@ -11,7 +11,7 @@ export default async function HighlightsOfInternationalParticipations() {
     return (
         <section className="container min-h-screen md:mt-40 mt-8 relative flex flex-col justify-center lg:justify-start" id={"highlightsSection"}>
             {/* Header divider */}
-            <Motion animation="fadeUp">
+            <ServerMotion animation="fadeUp">
                 <div className="flex gap-4 items-center mt-14 w-full justify-center lg:justify-center">
                     <div className="flex w-full md:w-32 lg:w-full h-0.5 bg-[#B9A779]"></div>
                     <div className="flex items-center px-4 py-2 justify-center">
@@ -19,12 +19,12 @@ export default async function HighlightsOfInternationalParticipations() {
                     </div>
                     <div className="flex w-full md:w-32 lg:w-full h-0.5 bg-[#B9A779]"></div>
                 </div>
-            </Motion>
+            </ServerMotion>
 
             {/* Cards Grid */}
             <div className="grid grid-cols-1  md:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-2 mb-16 md:mb-10 gap-8 mt-12 md:mt-28 justify-items-center mx-auto">
                 {indices.map((index: string, i: number) => (
-                    <Motion key={index} animation="fadeUp" staggerIndex={i} hover="lift">
+                    <ServerMotion key={index} animation="fadeUp" staggerIndex={i} hover="lift">
                         <div className="flex flex-col   md:h-80  md:flex-row md:pb-0 pb-4 bg-white rounded-lg border border-[#E3E7E5] overflow-hidden">
                             {/* Right Image */}
                             <img
@@ -52,7 +52,7 @@ export default async function HighlightsOfInternationalParticipations() {
                                 </Button>
                             </div>
                         </div>
-                    </Motion>
+                    </ServerMotion>
                 ))}
             </div>
 

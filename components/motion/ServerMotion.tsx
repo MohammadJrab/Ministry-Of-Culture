@@ -1,35 +1,35 @@
 'use client';
 
 /**
- * Motion - A single, unified animation component.
+ * ServerMotion - A single, unified animation component.
  * 
  * Replaces all section-specific wrappers with one configurable component.
  * Supports: fade, slide, scale, stagger, and hover interactions.
  * 
  * @example
  * // Basic fade-up animation
- * <Motion animation="fadeUp">
+ * <ServerMotion animation="fadeUp">
  *   <Content />
- * </Motion>
+ * </ServerMotion>
  * 
  * // Slide from left on scroll
- * <Motion animation="slideLeft" trigger="inView">
+ * <ServerMotion animation="slideLeft" trigger="inView">
  *   <Image />
- * </Motion>
+ * </ServerMotion>
  * 
  * // Staggered cards with hover
- * <Motion animation="fadeUp" staggerIndex={0} hover="lift">
+ * <ServerMotion animation="fadeUp" staggerIndex={0} hover="lift">
  *   <Card />
- * </Motion>
+ * </ServerMotion>
  * 
  * // Container for staggered children
- * <Motion animation="stagger" trigger="onMount">
- *   <Motion.Item><Child1 /></Motion.Item>
- *   <Motion.Item><Child2 /></Motion.Item>
- * </Motion>
+ * <ServerMotion animation="stagger" trigger="onMount">
+ *   <ServerMotion.Item><Child1 /></ServerMotion.Item>
+ *   <ServerMotion.Item><Child2 /></ServerMotion.Item>
+ * </ServerMotion>
  */
 
-import { ReactNode, createContext, useContext } from 'react';
+import { ReactNode, createContext } from 'react';
 import {
     LazyMotion,
     domAnimation,
@@ -69,7 +69,7 @@ type TriggerType = 'onMount' | 'inView';
 type HoverType = 'lift' | 'none';
 type ViewportType = 'normal' | 'early';
 
-interface MotionProps {
+interface ServerMotionProps {
     children: ReactNode;
     /** Animation type to apply */
     animation?: AnimationType;
@@ -119,7 +119,7 @@ const MotionContext = createContext<{ isInsideStagger: boolean }>({
 // MAIN COMPONENT
 // ============================================================================
 
-export function Motion({
+export function ServerMotion({
     children,
     animation = 'fadeUp',
     trigger = 'inView',
@@ -129,7 +129,7 @@ export function Motion({
     viewport = 'normal',
     className = '',
     as = 'div',
-}: MotionProps) {
+}: ServerMotionProps) {
     const prefersReducedMotion = useReducedMotion();
     const isStagger = animation === 'stagger';
 
@@ -227,6 +227,6 @@ export function MotionItem({ children, className = '' }: MotionItemProps) {
 }
 
 // Compound component pattern
-export const MotionCompound = Object.assign(Motion, { Item: MotionItem });
+export const ServerMotionCompound = Object.assign(ServerMotion, { Item: MotionItem });
 
-export default Motion;
+export default ServerMotion;

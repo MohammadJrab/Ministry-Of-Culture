@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import { Motion } from "@/components/motion";
+import { ServerMotion, MotionItem } from "@/components/motion";
 
 export default async function OurMessageSection() {
     const t = await getTranslations('ourMessageSection');
@@ -9,15 +9,15 @@ export default async function OurMessageSection() {
         <section className="container relative flex flex-col justify-center lg:justify-start" id={"ourMessageSection"}>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 justify-center gap-10 mx-auto mt-24 lg:mt-46 items-center">
-                <Motion animation="slideLeft" className="flex w-full lg:w-fit mx-auto flex-col-reverse lg:flex-col items-center lg:order-0 gap-4">
+                <ServerMotion animation="slideLeft" className="flex w-full lg:w-fit mx-auto flex-col-reverse lg:flex-col items-center lg:order-0 gap-4">
                     <Image
                         src="/images/ourMessage.png"
                         width={500}
                         height={500}
                         alt="Picture of the author"
                     />
-                </Motion>
-                <Motion animation="slideRight" className="flex flex-col justify-center items-center lg:items-start lg:ms-11 text-center lg:text-start">
+                </ServerMotion>
+                <ServerMotion animation="slideRight" className="flex flex-col justify-center items-center lg:items-start lg:ms-11 text-center lg:text-start">
                     <div className="w-48 mb-6">
                         <h2 className="text-[#428177] text-3xl md:text-3xl font-bold">
                             {t('title')}
@@ -27,7 +27,7 @@ export default async function OurMessageSection() {
                     <p className="font-normal text-lg md:text-2xl">
                         {t('description')}
                     </p>
-                </Motion>
+                </ServerMotion>
             </div>
 
         </section>

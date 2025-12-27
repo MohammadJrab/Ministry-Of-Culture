@@ -1,15 +1,16 @@
+
 import { getTranslations } from "next-intl/server";
-import { Motion } from "@/components/motion";
+import { ServerMotion, MotionItem } from "@/components/motion";
 
 export default async function TheNewSyriaSection() {
     const t = await getTranslations('theNewSyriaSection');
     return (
         <section className={'container pt-32 md:pt-64 h-120 w-full'}>
             <div className={'grid grid-cols-1 md:grid-cols-2 gap-12 items-center'}>
-                <Motion animation="slideLeft">
+                <ServerMotion animation="slideLeft">
                     <img src="/svg/map-with-new-syria.svg" alt="map-frame" width={800} height={350} />
-                </Motion>
-                <Motion animation="slideRight" className="flex flex-col gap-4">
+                </ServerMotion>
+                <ServerMotion animation="slideRight" className="flex flex-col gap-4">
                     <h3 className="text-2xl md:text-3xl font-semibold leading-normal text-foreground max-w-2xl">
                         {t.rich('part1', {
                             primary: (chunks) => <span className="text-white px-1 bg-[#428177]">{chunks}</span>,
@@ -23,7 +24,7 @@ export default async function TheNewSyriaSection() {
                             br: () => <br />
                         })}
                     </h3>
-                </Motion>
+                </ServerMotion>
             </div>
         </section>
     );

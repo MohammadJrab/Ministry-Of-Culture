@@ -1,8 +1,8 @@
 // Motion Components
 // Clean, reusable animation system
 
-// Use MotionCompound for compound component pattern (Motion.Item)
-export { Motion, MotionItem, MotionCompound } from './Motion';
+// Use ServerMotionCompound for compound component pattern (ServerMotion.Item)
+export { ServerMotion, MotionItem, ServerMotionCompound } from './ServerMotion';
 
 // Default export for convenience
-export { default } from './Motion';
+export { default } from './ServerMotion';
