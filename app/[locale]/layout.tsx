@@ -10,11 +10,11 @@ import { TimeZoneCookieSetter } from "./_components/time-zone-cookie-setter";
 import DirectionProvider from "@/components/ui/direction-provider";
 import Footer from "@/app/[locale]/_components/footer";
 import { Metadata } from "next";
-import { Roboto, Changa, Cairo } from "next/font/google";
+import { Montserrat, Changa, Cairo } from "next/font/google";
 import { Navbar } from "./_components/nav-bar";
 
-const robotoFont = Roboto({
-    variable: "--font-roboto",
+const montserratFont = Montserrat({
+    variable: "--font-montserrat",
     subsets: ["latin"],
     weight: ["300", "400", "500", "600", "700"],
     display: "swap",
@@ -56,7 +56,7 @@ export default async function RootLayout(props) {
                     <meta name="viewport"
                         content="width=device-width, initial-scale=1, interactive-widget=resizes-content" />
                 </head>
-                <body className={`${robotoFont.variable} ${changaFont.variable} ${cairoFont.variable} antialiased`}>
+                <body className={`${montserratFont.variable} ${changaFont.variable} ${cairoFont.variable} antialiased`}>
 
                     <LazyMotion strict features={domAnimation}>
                         <DirectionProvider dir={direction}>
@@ -87,6 +87,7 @@ export async function generateMetadata({ params }): Promise<Metadata> {
         creator: 'Ministry of Culture',
         publisher: appName,
         keywords: t.raw('keywords') as string[],
+        description: t('description'),
 
         openGraph: {
             title: t('title'),

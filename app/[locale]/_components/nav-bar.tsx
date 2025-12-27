@@ -53,8 +53,8 @@ export function Navbar() {
 
                 <div className="w-full bg-white shadow-md">
                     <div className="container h-16 flex justify-between items-center">
-                        <Link href="#home" aria-label="Go to homepage" className='group w-24 relative'>
-                            <Logo className="transition-opacity group-hover:opacity-0 duration-300 max-sm:scale-86" />
+                        <Link href="/" aria-label="Go to homepage" className='group w-24 relative'>
+                            <Logo className="transition-opacity  duration-300 max-sm:scale-86" />
 
                         </Link>
 
@@ -130,7 +130,7 @@ export function Navbar() {
                         </NavigationMenu>
 
                         <Button className={'max-lg:hidden bg-lightBlack rounded-full'} >
-                            <Link href={'https://moc.gov.sy/'} target="_blank">{t('events')}</Link>
+                            <Link href={'http://events.moc.gov.sy'} target="_blank">{t('events')}</Link>
                             <div className="rounded-full size-7 flex items-center justify-center bg-white">
                                 <IconArrowUpLeft className="text-lightBlack ltr:-scale-x-100" stroke={2} />
 

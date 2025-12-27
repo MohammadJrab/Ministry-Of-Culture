@@ -1,11 +1,12 @@
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
+import { Motion } from "@/components/motion";
+
 export default async function VisionSection() {
     const t = await getTranslations('visionSection');
     return (
         <section className={'pt-16 px-6 md:pt-32 mb-32  md:mb-56  w-full'}>
-            <div className={'flex  relative justify-center items-center text-center'}
-            >
+            <Motion animation="scaleIn" className="flex relative justify-center items-center text-center">
                 <img src="/svg/half-shape-left.svg" alt="Vision" className="absolute left-0 " />
                 <h3 className="text-xl md:text-2xl leading-12 font-medium text-foreground ">
                     {t.rich('quote', {
@@ -15,7 +16,8 @@ export default async function VisionSection() {
                     })}
 
                 </h3>
-            </div>
+            </Motion>
         </section>
     );
 }
+

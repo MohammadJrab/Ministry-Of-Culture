@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { getTranslations, getLocale } from 'next-intl/server';
 import { IconArrowForwardUpDouble, IconArrowRight } from '@tabler/icons-react';
 import { UnescoCarousel } from './UnescoCarousel';
+import { Motion } from '@/components/motion';
 
 const TheUnescoSection = async () => {
     const t = await getTranslations('theUnesco');
@@ -49,24 +50,25 @@ const TheUnescoSection = async () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-                    {/* Left: Description Card */}
-                    <div
+                    {/* Left: Description Card - Animated */}
+                    <Motion animation="fadeUp">
+                        <div
+                            className="relative bg-gradient-to-br from-[rgba(185,167,121,0.39)] to-[rgba(185,167,121,0.1)] backdrop-blur-md border border-white/20 p-8 rounded-2xl "
+                        >
+                            <img src="/svg/unisco_pattern.svg" alt="unisco_pattern" className="object-cover absolute top-0 right-0 size-56" />
 
-                        className="relative bg-gradient-to-br from-[rgba(185,167,121,0.39)] to-[rgba(185,167,121,0.1)] backdrop-blur-md border border-white/20 p-8 rounded-2xl "
-                    >
-                        <img src="/svg/unisco_pattern.svg" alt="unisco_pattern" className="object-cover absolute top-0 right-0 size-56" />
+                            <div className="absolute top-4 start-4 w-12 h-12 border-t-2 border-s-2 border-white/50 rounded-ss-lg" />
 
-                        <div className="absolute top-4 start-4 w-12 h-12 border-t-2 border-s-2 border-white/50 rounded-ss-lg" />
+                            <p className="text-white text-lg px-8 py-6 md:text-lg whitespace-pre-line leading-relaxed">
+                                {t('description')}
+                            </p>
+                            <div className={`absolute bottom-4 end-4 bg-[#333] p-3 rounded-lg text-white `}>
 
-                        <p className="text-white text-lg px-8 py-6 md:text-lg whitespace-pre-line leading-relaxed">
-                            {t('description')}
-                        </p>
-                        <div className={`absolute bottom-4 end-4 bg-[#333] p-3 rounded-lg text-white `}>
+                                <IconArrowForwardUpDouble className="rtl:-scale-x-100" />
 
-                            <IconArrowForwardUpDouble className="rtl:-scale-x-100" />
-
+                            </div>
                         </div>
-                    </div>
+                    </Motion>
 
                     {/* Right: Slider */}
                     <UnescoCarousel

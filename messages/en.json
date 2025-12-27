@@ -14,10 +14,6 @@
   },
   "footer": {
     "companyInfoTitle": "Ministry of Culture",
-    "contact": {
-      "title": "Contact Us",
-      "address": ""
-    },
     "sections": {
       "sections": {
         "title": "Sections",
@@ -28,7 +24,7 @@
           },
           {
             "label": "About Ministry",
-            "href": "/about"
+            "href": "/about-ministry"
           },
           {
             "label": "International Participation",
@@ -138,6 +134,7 @@
       "1": {
         "title": "Traditional Aleppo Laurel Soap Craft",
         "year": "2024"
+        
       },
       "2": {
         "title": "Falconry",

@@ -7,6 +7,7 @@ import { Link } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import LogoDark from "./icons/logoDark";
 import { Button } from "@/components/ui/button";
+import { Motion } from "@/components/motion";
 
 export default async function Footer({ locale }: { locale: string }) {
     const t = await getTranslations({ locale, namespace: "footer" });
@@ -39,7 +40,7 @@ export default async function Footer({ locale }: { locale: string }) {
                 className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
             <div className="absolute top-0 left-1/3 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
 
-            <div className="container relative z-10">
+            <Motion animation="fadeOnly" className="container relative z-10">
                 {/* Main Footer Content */}
                 <div className="py-12 md:pt-16 md:pb-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-8 mb-6 text-center md:text-start">
@@ -122,7 +123,7 @@ export default async function Footer({ locale }: { locale: string }) {
 
 
 
-            </div>
+            </Motion>
 
             <div className="bg-primary w-full">
                 <img src="/svg/nav-shape.svg" alt="nav-shape" className="w-full h-auto object-cover" />

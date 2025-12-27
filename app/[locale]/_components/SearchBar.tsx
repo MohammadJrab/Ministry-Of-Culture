@@ -16,7 +16,7 @@ const SearchBar = async () => {
                 <IconSearch className="pointer-events-none absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
 
                 <Input
-                    name="keyword"
+                    name="Keyword"
                     type="text"
                     placeholder={t('placeholder')}
                     className="h-12 rounded-lg pl-11 pr-4 text-right"
