@@ -7,12 +7,12 @@ export async function NationalCulturalIdentitySection() {
     const t = await getTranslations('nationalCulturalIdentity');
 
     return (
-        <section className="relative w-full isolate lg:h-76 h-40 overflow-hidden">
+        <section className="relative mt-50 md:mt-60  w-full isolate lg:h-76 h-40 overflow-hidden">
             {/* Background */}
             <div className="absolute inset-0">
                 <Image
-                    src="/images/nationalCulturalIdentity.jpg"
-                    alt="nationalCulturalIdentity"
+                    src="/images/national-cultural-identity.jpg"
+                    alt="National Cultural Identity"
                     fill
                     className="object-cover object-center"
                 />
