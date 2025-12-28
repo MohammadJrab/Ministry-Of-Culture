@@ -97,8 +97,8 @@ export async function generateMetadata({ params }): Promise<Metadata> {
             type: "website",
             images: [
                 {
-                    url: `${websiteUrl}/images/social-media-image.png`,
-                    alt: "Faaliyah Social Media Image",
+                    url: `${websiteUrl}/images/social-media-image.jpg`,
+                    alt: "Ministry of Culture Social Media Image",
                 },
             ],
         },
