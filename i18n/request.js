@@ -1,9 +1,8 @@
-import {getRequestConfig} from 'next-intl/server';
-import {routing} from '@/i18n/routing';
-import {getFormatterOptions} from "@/i18n/formatter-options";
+import { getRequestConfig } from 'next-intl/server';
+import { routing } from '@/i18n/routing';
+import { getFormatterOptions } from "@/i18n/formatter-options";
 
-export default getRequestConfig(async ({requestLocale}) =>
-{
+export default getRequestConfig(async ({ requestLocale }) => {
     // This typically corresponds to the `[locale]` segment
     let locale = await requestLocale;
 

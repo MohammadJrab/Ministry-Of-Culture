@@ -18,7 +18,6 @@ export default function ContactUsForm() {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
-        const subject = encodeURIComponent(t('emailSubject'));
         const body = encodeURIComponent(
             `${t('subjectLabel')}: ${subject}\n` +
             `${t('nameLabel')}: ${name}\n` +

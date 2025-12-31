@@ -1,7 +1,6 @@
 import {
     IconBrandInstagram,
-    IconBrandFacebook,
-    IconBrandFacebookFilled
+    IconBrandFacebook
 } from "@tabler/icons-react";
 import { Link } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
@@ -72,7 +71,7 @@ export default async function Footer({ locale }: { locale: string }) {
                                     <li key={index}>
                                         <Link
                                             href={link.href}
-                                            className="text-white text-sm transition-colors hover:translate-x-1 inline-block duration-300"
+                                            className="relative text-white text-sm hover:-translate-x-2 rtl:hover:translate-x-2 inline-block transition-transform duration-300"
                                         >
                                             {link.label}
                                         </Link>
@@ -91,7 +90,7 @@ export default async function Footer({ locale }: { locale: string }) {
                                     <li key={index}>
                                         <Link
                                             href={link.href}
-                                            className="text-white text-sm transition-colors hover:translate-x-1 inline-block duration-300"
+                                            className="relative text-white text-sm hover:-translate-x-2 rtl:hover:translate-x-2 inline-block transition-transform duration-300"
                                         >
                                             {link.label}
                                         </Link>
@@ -112,7 +111,7 @@ export default async function Footer({ locale }: { locale: string }) {
                                 </Button>
                                 <Button asChild size={"icon"} variant="outline" className="bg-transparent border-[0.8px] text-white hover:text-primary border-white shadow-none rounded-md [&_svg]:size-6">
                                     <Link href={"https://www.facebook.com/profile.php?id=61574722665055"} target="_blank">
-                                        <IconBrandFacebookFilled />
+                                        <IconBrandFacebook />
                                     </Link>
                                 </Button>
 

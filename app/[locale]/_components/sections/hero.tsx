@@ -12,7 +12,7 @@ export default async function HeroSection() {
     return (
         <section className="container min-h-screen relative flex flex-col justify-center lg:justify-start" id={"home"}>
 
-            <ServerMotion animation="stagger" trigger="onMount" className="grid grid-cols-1 lg:grid-cols-2 justify-center gap-10 mx-auto mt-24 lg:mt-60 items-center">
+            <ServerMotion animation="stagger" trigger="onMount" className="grid grid-cols-1 lg:grid-cols-2 justify-center sm:gap-10 max-sm:gap-4 mx-auto mt-40 lg:mt-60 items-center">
                 <MotionItem className="flex flex-col justify-center items-center lg:items-start lg:ms-11 text-center lg:text-start">
                     <h3 className="text-lg md:text-3xl font-[400s] leading-normal text-foreground max-w-2xl">
                         {t.rich('hero.quotePart1', {

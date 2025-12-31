@@ -74,8 +74,8 @@
     "description": "We provide custom website and application development services tailored to support your company's growth.",
     "callToAction": "Discover Our Solutions",
     "followUs": "Follow Us On Social Media:",
-    "quotePart1": "<secondary>”</secondary>We shape <secondary>Heritage</secondary> and <primary>Innovation</primary> and the spirit of the community...",
-    "quotePart2": "So we craft together a prosperous future worthy of Syrians.<secondary>“</secondary>"
+    "quotePart1": "We shape <secondary>Heritage</secondary> and <primary>Innovation</primary> and the spirit of the community...",
+    "quotePart2": "So we craft together a prosperous future worthy of Syrians."
   },
   "news": {
     "title": "{count, plural, =0 {No news} one {# news} other {# news}}",

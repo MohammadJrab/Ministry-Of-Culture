@@ -8,10 +8,10 @@ export default async function OurMessageSection() {
     return (
         <section className="container relative flex flex-col justify-center lg:justify-start" id={"ourMessageSection"}>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 justify-center gap-10 mx-auto mt-24 lg:mt-46 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 justify-center gap-10 mx-auto mt-24  items-center">
                 <ServerMotion animation="slideLeft" className="flex w-full lg:w-fit mx-auto flex-col-reverse lg:flex-col items-center lg:order-0 gap-4">
                     <Image
-                        src="/images/ourMessage.png"
+                        src="/images/our-message.png"
                         width={500}
                         height={500}
                         alt="Picture of the author"

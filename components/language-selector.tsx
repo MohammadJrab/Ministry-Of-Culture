@@ -36,7 +36,7 @@ export default function LanguageSelector({ size = 'sm' }: LanguageSelectorProps)
                     size={size}
                     aria-controls="language-menu"
                     aria-expanded="false"
-                    className={'max-lg:justify-start max-lg:text-base lg:font-normal max-lg:ps-4'}
+                    className={'max-lg:justify-start max-lg:text-base lg:font-normal max-lg:ps-4 hover:cursor-pointer'}
                 >
                     {t(currentLocale)}<IconChevronDown />
                 </Button>

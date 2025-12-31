@@ -7,7 +7,7 @@ export const OurTasksSection = async () => {
     const indices = Array.from({ length: 4 }, (_, i) => (i + 1).toString());
 
     return (
-        <section className={'mt-16 md:mt-32 w-full'}>
+        <section className={'mt-16 lg:mt-16 w-full'}>
             <ServerMotion animation="fadeUp" className="text-center mb-12">
                 <h2 className="text-2xl font-medium text-[#3D3D3D]">
                     {t('title')}

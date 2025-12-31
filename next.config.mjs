@@ -14,22 +14,16 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
-                hostname: 'adel-hello.runasp.net',
-                port: '',
-            },
-            {
-                protocol: 'https',
                 hostname: new URL(process.env.NEXT_PUBLIC_API_URL).host,
                 port: '',
             },
         ]
     },
-    async redirects()
-    {
+    async redirects() {
         return [
             {
                 source: "/:path*/app.js",
-                has: [{type: "host", value: "syrian-ministry-of-culture.com"}],
+                has: [{ type: "host", value: "syrian-ministry-of-culture.com" }],
                 destination: "/",
                 permanent: true,
             },

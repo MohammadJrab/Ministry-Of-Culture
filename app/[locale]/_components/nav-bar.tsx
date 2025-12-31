@@ -7,7 +7,7 @@ import { Link } from "@/i18n/routing";
 import Logo from "./icons/logo";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "@/components/ui/navigation-menu";
+import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 
 
 interface RouteProps {
@@ -116,7 +116,7 @@ export function Navbar() {
                             <NavigationMenuList className='gap-4'>
                                 {routeList.map(({ href, label }) => (
                                     <NavigationMenuItem key={href}>
-                                        <NavigationMenuLink asChild>
+                                        <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
                                             <Link href={href}>
                                                 {t(label)}
                                             </Link>
@@ -129,12 +129,13 @@ export function Navbar() {
                             </NavigationMenuList>
                         </NavigationMenu>
 
-                        <Button className={'max-lg:hidden bg-lightBlack rounded-full'} >
-                            <Link href={'http://events.moc.gov.sy'} target="_blank">{t('events')}</Link>
-                            <div className="rounded-full size-7 flex items-center justify-center bg-white">
-                                <IconArrowUpLeft className="text-lightBlack ltr:-scale-x-100" stroke={2} />
+                        <Button className={'max-lg:hidden bg-lightBlack rounded-full'} asChild >
+                            <Link href={'http://events.moc.gov.sy'} target="_blank">{t('events')}
+                                <div className="rounded-full size-7 flex items-center justify-center bg-white">
+                                    <IconArrowUpLeft className="text-lightBlack ltr:-scale-x-100" stroke={2} />
 
-                            </div>
+                                </div>
+                            </Link>
                         </Button>
                     </div>
                 </div>

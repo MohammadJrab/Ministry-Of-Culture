@@ -5,8 +5,8 @@ import { ServerMotion, MotionItem } from "@/components/motion";
 export default async function TheNewSyriaSection() {
     const t = await getTranslations('theNewSyriaSection');
     return (
-        <section className={'container pt-32 md:pt-64 h-120 w-full'}>
-            <div className={'grid grid-cols-1 md:grid-cols-2 gap-12 items-center'}>
+        <section className={'container pt-32 md:pt-64  w-full'}>
+            <div className={'flex flex-col-reverse md:flex-row gap-12 items-center'}>
                 <ServerMotion animation="slideLeft">
                     <img src="/svg/map-with-new-syria.svg" alt="map-frame" width={800} height={350} />
                 </ServerMotion>

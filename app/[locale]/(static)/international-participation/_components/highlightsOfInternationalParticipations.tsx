@@ -9,20 +9,20 @@ export default async function HighlightsOfInternationalParticipations() {
     const indices = Array.from({ length: 4 }, (_, i) => (i + 1).toString());
 
     return (
-        <section className="container min-h-screen md:mt-40 mt-8 relative flex flex-col justify-center lg:justify-start" id={"highlightsSection"}>
+        <section className="container min-h-screen md:mt-32 mt-8 relative flex flex-col  justify-center lg:justify-start" id={"highlightsSection"}>
             {/* Header divider */}
             <ServerMotion animation="fadeUp">
-                <div className="flex gap-4 items-center mt-14 w-full justify-center lg:justify-center">
+                <div className="flex gap-4 items-center mt-0 w-full justify-center lg:justify-center">
                     <div className="flex w-full md:w-32 lg:w-full h-0.5 bg-[#B9A779]"></div>
                     <div className="flex items-center px-4 py-2 justify-center">
-                        <h1 className="text-[#484848] lg:text-2xl text-lg font-medium md:text-nowrap">{t('highlightsOfInternationalParticipations.title')}</h1>
+                        <h1 className="text-[#484848] lg:text-2xl text-lg font-medium text-center lg:text-nowrap">{t('highlightsOfInternationalParticipations.title')}</h1>
                     </div>
                     <div className="flex w-full md:w-32 lg:w-full h-0.5 bg-[#B9A779]"></div>
                 </div>
             </ServerMotion>
 
             {/* Cards Grid */}
-            <div className="grid grid-cols-1  md:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-2 mb-16 md:mb-10 gap-8 mt-12 md:mt-28 justify-items-center mx-auto">
+            <div className="grid grid-cols-1  md:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-2 mb-16 md:mb-10 gap-8 mt-6 md:mt-14 justify-items-center mx-auto">
                 {indices.map((index: string, i: number) => (
                     <ServerMotion key={index} animation="fadeUp" staggerIndex={i} hover="lift">
                         <div className="flex flex-col   md:h-80  md:flex-row md:pb-0 pb-4 bg-white rounded-lg border border-[#E3E7E5] overflow-hidden">

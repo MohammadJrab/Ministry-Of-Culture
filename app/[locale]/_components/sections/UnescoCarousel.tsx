@@ -72,7 +72,7 @@ export function UnescoCarousel({ items, locale }: UnescoCarouselProps) {
 
                                 <div className={cn("flex flex-col gap-2")}>
                                     <h3 className="text-lg font-semibold">{item.title}</h3>
-                                    <p className="text-[#A48E68] font-semibold text-lg">{item.year}</p>
+                                    <p className="text-[#d6bf94] font-semibold text-lg">{item.year}</p>
                                 </div>
 
                             </div>
