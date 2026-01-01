@@ -6,7 +6,7 @@ export default async function OurMessageSection() {
     const t = await getTranslations('ourMessageSection');
 
     return (
-        <section className="container relative flex flex-col justify-center lg:justify-start" id={"ourMessageSection"}>
+        <section className="container relative flex flex-col justify-center lg:justify-start overflow-hidden" id={"ourMessageSection"}>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 justify-center gap-10 mx-auto mt-24  items-center">
                 <ServerMotion animation="slideLeft" className="flex w-full lg:w-fit mx-auto flex-col-reverse lg:flex-col items-center lg:order-0 gap-4">

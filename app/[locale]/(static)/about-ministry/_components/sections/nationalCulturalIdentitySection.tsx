@@ -7,7 +7,7 @@ export async function NationalCulturalIdentitySection() {
     const t = await getTranslations('nationalCulturalIdentity');
 
     return (
-        <section className="relative mt-20 md:mt-50  w-full isolate lg:h-76 h-40 overflow-hidden">
+        <section className="relative mt-20 md:mt-50 overflow-hidden w-full isolate lg:h-76 h-40 ">
             {/* Background */}
             <div className="absolute inset-0">
                 <Image

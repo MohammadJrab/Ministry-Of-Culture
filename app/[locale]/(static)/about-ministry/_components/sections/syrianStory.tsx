@@ -6,7 +6,7 @@ export default async function SyrianStorySection() {
     const t = await getTranslations('syrianStorySection');
 
     return (
-        <section className="container mb-12  mt-16 md:mt-32  relative flex flex-col justify-center lg:justify-start" id={"syrianStorySection"}>
+        <section className="container mb-12  mt-16 md:mt-32  relative flex flex-col justify-center lg:justify-start overflow-hidden" id={"syrianStorySection"}>
             {/* Header divider */}
             <ServerMotion animation="fadeUp">
                 <div className="flex gap-4 items-center mt-14 w-full justify-center lg:justify-center">

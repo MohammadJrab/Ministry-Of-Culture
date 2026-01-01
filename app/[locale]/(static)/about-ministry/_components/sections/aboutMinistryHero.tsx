@@ -6,7 +6,7 @@ import { ServerMotion, MotionItem } from "@/components/motion";
 export default async function AboutMinistryHero() {
     const t = await getTranslations();
     return (
-        <section className="container relative flex flex-col  justify-center items-center " id={"home"}>
+        <section className="container relative flex flex-col  justify-center items-center overflow-hidden" id={"home"}>
 
             <ServerMotion animation="stagger" trigger="onMount" className="mt-30 grid grid-cols-1  lg:grid-cols-2 justify-center gap-20 mx-auto lg:mt-60 items-center">
                 <MotionItem className="flex flex-col justify-center  lg:items-start lg:ms-11 items-center">
@@ -24,7 +24,7 @@ export default async function AboutMinistryHero() {
                         <div className="flex w-16 md:w-32 lg:w-60 h-1 bg-secondary"></div>
                     </div>
                 </MotionItem>
-                <MotionItem className="flex w-full justify-center lg:w-fit mx-auto flex-col-reverse lg:flex-col items-center lg:order-0 gap-4">
+                <MotionItem className="flex w-full justify-center lg:w-fit mx-auto flex-col-reverse lg:flex-col items-center lg:order-0  gap-4">
                     <Image
                         src="/images/about-hero-image.png"
                         width={700}

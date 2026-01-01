@@ -13,7 +13,7 @@ const CulturalCard: React.FC<CulturalPrincipleProps> = ({
 }) => {
     return (
         <div
-            className="group relative max-w-80 md:h-108 md:max-w-96 flex flex-col p-8 bg-[#F4F6F5] rounded-2xl border border-white shadow-sm font-sans overflow-hidden transition-all duration-500"
+            className="group relative max-w-80 md:h-108 md:max-w-96 flex flex-col p-8 bg-[#F4F6F5] rounded-2xl border border-white shadow-sm  overflow-hidden transition-all duration-500"
         >
             {/* Overlay */}
             <div

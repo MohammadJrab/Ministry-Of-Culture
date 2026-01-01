@@ -9,13 +9,13 @@ export default async function HighlightsOfInternationalParticipations() {
     const indices = Array.from({ length: 4 }, (_, i) => (i + 1).toString());
 
     return (
-        <section className="container min-h-screen md:mt-32 mt-8 relative flex flex-col  justify-center lg:justify-start" id={"highlightsSection"}>
+        <section className="container min-h-screen md:mt-32 mt-20 relative flex flex-col  justify-center lg:justify-start" id={"highlightsSection"}>
             {/* Header divider */}
             <ServerMotion animation="fadeUp">
                 <div className="flex gap-4 items-center mt-0 w-full justify-center lg:justify-center">
                     <div className="flex w-full md:w-32 lg:w-full h-0.5 bg-[#B9A779]"></div>
-                    <div className="flex items-center px-4 py-2 justify-center">
-                        <h1 className="text-[#484848] lg:text-2xl text-lg font-medium text-center lg:text-nowrap">{t('highlightsOfInternationalParticipations.title')}</h1>
+                    <div className="flex items-center lg:px-4 py-2 justify-center">
+                        <h1 className="text-[#484848] whitespace-nowrap text-md lg:text-2xl font-medium text-center lg:text-nowrap">{t('highlightsOfInternationalParticipations.title')}</h1>
                     </div>
                     <div className="flex w-full md:w-32 lg:w-full h-0.5 bg-[#B9A779]"></div>
                 </div>

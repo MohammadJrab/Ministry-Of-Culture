@@ -11,6 +11,8 @@
     --color-background: hsl(var(--background));
     --color-foreground: hsl(var(--foreground));
 
+    --font-cairo: var(--font-cairo);
+
     --color-primary: hsl(var(--primary));
     --color-primary-foreground: hsl(var(--primary-foreground));
 
@@ -420,6 +422,7 @@
     --color-gold: var(--gold);
     --color-lightBlack: var(--lightBlack);
     --color-lightPrimaryGreen: var(--lightPrimaryGreen);
+
 }
 
 .loader {
