@@ -55,6 +55,8 @@ export default async function RootLayout(props) {
                 <head>
                     <meta name="viewport"
                         content="width=device-width, initial-scale=1, interactive-widget=resizes-content" />
+                    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+
                 </head>
                 <body className={`${montserratFont.variable} ${changaFont.variable} ${cairoFont.variable} antialiased`}>
 
