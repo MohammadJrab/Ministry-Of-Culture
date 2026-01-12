@@ -27,7 +27,7 @@ export default async function Footer({ locale }: { locale: string }) {
             icon: IconBrandInstagram,
             href: "https://www.instagram.com/mocsyr/",
             label: t("social.instagram"),
-            color: "hover:text-pink-400"
+            color: "hover:text-blue-400"
         },
         {
             icon: IconBrandX,
