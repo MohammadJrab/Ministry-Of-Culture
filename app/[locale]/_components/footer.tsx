@@ -27,7 +27,7 @@ export default async function Footer({ locale }: { locale: string }) {
             icon: IconBrandInstagram,
             href: "https://www.instagram.com/mocsyr/",
             label: t("social.instagram"),
-            color: "hover:text-blue-400"
+            color: "hover:text-pink-400"
         },
         {
             icon: IconBrandX,
@@ -50,7 +50,7 @@ export default async function Footer({ locale }: { locale: string }) {
             <ServerMotion animation="fadeOnly" className="container relative z-10">
                 {/* Main Footer Content */}
                 <div className="py-12 md:pt-16 md:pb-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-3 gap-8 mb-6 text-center md:text-start">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-5 gap-8 mb-6 text-center md:text-start">
 
                         {/* Logo & Copy Right */}
                         <div className="lg:col-span-2 space-y-6 flex flex-col items-center md:items-start">
@@ -88,7 +88,7 @@ export default async function Footer({ locale }: { locale: string }) {
                             </ul>
                         </div>
 
-                        {/* Shortcuts */}
+                        {/* Important Links */}
                         <div className="lg:col-span-1">
                             <h4 className="text-gold  font-semibold mb-4 flex items-center justify-center md:justify-start gap-2">
                                 {t("sections.sections2.title")}
