@@ -28,10 +28,10 @@ const routeList: RouteProps[] = [
         href: "/about-ministry",
         label: "aboutMinistry",
     },
-    {
-        href: "/international-participation",
-        label: "internationalParticipation",
-    },
+    // {
+    //     href: "/international-participation",
+    //     label: "internationalParticipation",
+    // },
     {
         href: "/contact-us",
         label: "contactUs",
@@ -54,8 +54,7 @@ export function Navbar() {
                 <div className="w-full bg-white shadow-md">
                     <div className="container h-16 flex justify-between items-center">
                         <Link href="/" aria-label="Go to homepage" className='group w-24 relative'>
-                            <Logo className="transition-opacity  duration-300 max-sm:scale-86" />
-
+                            <Logo className="transition-opacity  duration-300 max-sm:scale-86 lg:max-xl:scale-62" />
                         </Link>
 
                         {/* <!-- Mobile --> */}
@@ -78,7 +77,7 @@ export function Navbar() {
                                         <SheetHeader className="mb-4 ml-4">
                                             <SheetTitle className="flex items-center">
                                                 <Link href="/" aria-label="Go to homepage" onClick={() => setIsOpen(false)}>
-                                                    <Logo className="max-sm:scale-86" />
+                                                    <Logo className="max-sm:scale-86 lg:max-xl:hidden" />
                                                 </Link>
                                             </SheetTitle>
                                         </SheetHeader>

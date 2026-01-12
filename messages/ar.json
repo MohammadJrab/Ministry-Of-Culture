@@ -27,12 +27,17 @@
             "href": "/about-ministry"
           },
           {
-            "label": "المشاركات الدولية",
-            "href": "/international-participation"
-          },
-          {
             "label": "تواصل معنا",
             "href": "/contact-us"
+          }
+        ]
+      },
+      "sections2": {
+        "title": "اختصارات",
+        "links": [
+          {
+            "label": "الأخبار",
+            "href": "/news"
           },
           {
             "label": "الفعاليات",
@@ -61,7 +66,8 @@
     "social": {
       "title": "تابعنا على مواقع التواصل الاجتماعي",
       "facebook": "فيسبوك",
-      "instagram": "انستغرام"
+      "instagram": "انستغرام",
+      "x": "X"
     },
     "copyright": "© وزارة الثقافة | الجمهورية العربية السورية <br></br> جميع الحقوق محفوظة {year}",
     "status": {

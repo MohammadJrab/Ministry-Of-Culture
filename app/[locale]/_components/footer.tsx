@@ -1,6 +1,8 @@
 import {
     IconBrandInstagram,
-    IconBrandFacebook
+    IconBrandFacebook,
+    IconBrandX,
+    IconBrandYoutube
 } from "@tabler/icons-react";
 import { Link } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
@@ -12,7 +14,7 @@ export default async function Footer({ locale }: { locale: string }) {
     const t = await getTranslations({ locale, namespace: "footer" });
 
     const servicesLinks = t.raw("sections.sections.links");
-    const importantLinks = t.raw("sections.importantLinks.links");
+    const servicesLinks2 = t.raw("sections.sections2.links");
 
     const socialLinks = [
         {
@@ -26,6 +28,12 @@ export default async function Footer({ locale }: { locale: string }) {
             href: "https://www.instagram.com/mocsyr/",
             label: t("social.instagram"),
             color: "hover:text-pink-400"
+        },
+        {
+            icon: IconBrandX,
+            href: "https://x.com/mocsyr",
+            label: t("social.x"),
+            color: "hover:text-blue-400"
         }
     ];
 
@@ -42,7 +50,7 @@ export default async function Footer({ locale }: { locale: string }) {
             <ServerMotion animation="fadeOnly" className="container relative z-10">
                 {/* Main Footer Content */}
                 <div className="py-12 md:pt-16 md:pb-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-8 mb-6 text-center md:text-start">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-3 gap-8 mb-6 text-center md:text-start">
 
                         {/* Logo & Copy Right */}
                         <div className="lg:col-span-2 space-y-6 flex flex-col items-center md:items-start">
@@ -80,13 +88,13 @@ export default async function Footer({ locale }: { locale: string }) {
                             </ul>
                         </div>
 
-                        {/* Important Links */}
+                        {/* Shortcuts */}
                         <div className="lg:col-span-1">
                             <h4 className="text-gold  font-semibold mb-4 flex items-center justify-center md:justify-start gap-2">
-                                {t("sections.importantLinks.title")}
+                                {t("sections.sections2.title")}
                             </h4>
                             <ul className="space-y-2">
-                                {importantLinks.map((link: any, index: number) => (
+                                {servicesLinks2.map((link: any, index: number) => (
                                     <li key={index}>
                                         <Link
                                             href={link.href}
@@ -114,7 +122,17 @@ export default async function Footer({ locale }: { locale: string }) {
                                         <IconBrandFacebook />
                                     </Link>
                                 </Button>
+                                <Button asChild size={"icon"} variant="outline" className="bg-transparent border-[0.8px] text-white hover:text-primary border-white shadow-none rounded-md [&_svg]:size-6">
+                                    <Link href={"https://x.com/mocsyr"} target="_blank">
+                                        <IconBrandX />
+                                    </Link>
+                                </Button>
 
+                                <Button asChild size={"icon"} variant="outline" className="bg-transparent border-[0.8px] text-white hover:text-primary border-white shadow-none rounded-md [&_svg]:size-6">
+                                    <Link href={"https://www.youtube.com/@MinistryofCultureSyria"} target="_blank">
+                                        <IconBrandYoutube />
+                                    </Link>
+                                </Button>
                             </div>
                         </div>
                     </div>

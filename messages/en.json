@@ -27,12 +27,17 @@
             "href": "/about-ministry"
           },
           {
-            "label": "International Participation",
-            "href": "/international-participation"
-          },
-          {
             "label": "Contact Us",
             "href": "/contact-us"
+          }
+        ]
+      },
+      "sections2": {
+        "title": "Shortcuts",
+        "links": [
+          {
+            "label": "News",
+            "href": "/news"
           },
           {
             "label": "Events",
@@ -61,7 +66,8 @@
     "social": {
       "title": "Follow Us On Social Media",
       "facebook": "Facebook",
-      "instagram": "Instagram"
+      "instagram": "Instagram",
+      "x": "X"
     },
     "copyright": "© Ministry of Culture | Syrian Arab Republic <br></br> All rights reserved {year}",
     "status": {
