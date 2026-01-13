@@ -13,6 +13,8 @@
     "placeholder": "بحث"
   },
   "footer": {
+    "developedBy": "طور بواسطة ",
+    "qmindTech": "QmindTech",
     "companyInfoTitle": "وزارة الثقافة",
     "sections": {
       "sections": {

@@ -39,8 +39,9 @@ export default async function Footer({ locale }: { locale: string }) {
 
     return (
         <footer className="relative bg-primary border-t overflow-hidden">
-            <div className="bg-primary w-full">
-                <img src="/svg/nav-shape.svg" alt="nav-shape" className="w-full h-auto object-cover" />
+            <div className="bg-primary w-full relative">
+                <img src="/svg/nav-shape.svg" alt="nav-shape" className="w-full h-12 object-cover scale-150 object-[0%_70%]" />
+                <div className="absolute inset-0 -bottom-3 bg-linear-to-b from-transparent to-primary" />
             </div>
             {/* Background Effects */}
             <div
@@ -142,8 +143,9 @@ export default async function Footer({ locale }: { locale: string }) {
 
             </ServerMotion>
 
-            <div className="bg-primary w-full">
-                <img src="/svg/nav-shape.svg" alt="nav-shape" className="w-full h-auto object-cover" />
+            <div className="bg-primary w-full relative">
+                <img src="/svg/nav-shape.svg" alt="nav-shape" className="w-full h-12 object-cover scale-150 object-object-[0%_100%]" />
+                <div className="absolute inset-0 -top-3 bg-linear-to-b from-primary to-transparent" />
             </div>
         </footer>
     );

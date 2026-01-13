@@ -3,7 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from 'next-intl/server';
 import { LazyMotion, domAnimation } from "motion/react"
 import localFont from "next/font/local";
-import { routing } from "@/i18n/routing";
+import { Link, routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { getFormatterOptions } from "@/i18n/formatter-options";
 import { TimeZoneCookieSetter } from "./_components/time-zone-cookie-setter";
@@ -12,7 +12,7 @@ import Footer from "@/app/[locale]/_components/footer";
 import { Metadata } from "next";
 import { Montserrat, Changa, Cairo } from "next/font/google";
 import { Navbar } from "./_components/nav-bar";
-
+import { AuroraText } from "@/components/magicui/aurora-text";
 const montserratFont = Montserrat({
     variable: "--font-montserrat",
     subsets: ["latin"],
@@ -46,6 +46,7 @@ export default async function RootLayout(props) {
     if (!routing.locales.includes(locale as any)) notFound();
     const direction = locale === 'ar' ? 'rtl' : 'ltr';
     const messages = await getMessages();
+    const t = await getTranslations({ locale, namespace: 'footer' });
 
     return (
         <NextIntlClientProvider messages={messages} formats={await getFormatterOptions()}>
@@ -66,13 +67,23 @@ export default async function RootLayout(props) {
                                 <Navbar />
                                 <main className={'flex-1'}>{children}</main>
                                 <Footer locale={locale} />
+                                <Link href={"https://qmindtech.net"}>
+                                    <div className="relative flex h-10 w-full flex-col items-center justify-center overflow-hidden bg-white">
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-center ltr:text-xs text-sm font-medium">
+                                                {t('developedBy')} {t('qmindTech')}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </Link>
                             </div>
+
                         </DirectionProvider>
                         <TimeZoneCookieSetter />
                     </LazyMotion>
                 </body>
             </html>
-        </NextIntlClientProvider>
+        </NextIntlClientProvider >
     );
 }
 

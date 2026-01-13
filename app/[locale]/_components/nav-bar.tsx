@@ -47,8 +47,9 @@ export function Navbar() {
         <>
 
             <header className="fixed inset-x-0 top-0 z-20 flex flex-col w-full">
-                <div className="bg-primary w-full">
-                    <img src="/svg/nav-shape.svg" alt="nav-shape" className="w-full h-auto object-cover" />
+                <div className="bg-primary w-full relative">
+                    <img src="/svg/nav-shape.svg" alt="nav-shape" className="w-full h-12 object-cover lg:scale-150 scale-250 object-[20%_10%_20%_10%]" />
+                    <div className="absolute inset-0 bg-linear-to-b from-transparent to-primary" />
                 </div>
 
                 <div className="w-full bg-white shadow-md">

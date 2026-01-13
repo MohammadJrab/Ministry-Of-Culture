@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
-import { IconBrandFacebook, IconBrandInstagram } from "@tabler/icons-react";
+import { IconBrandFacebook, IconBrandInstagram, IconBrandX, IconBrandYoutube } from "@tabler/icons-react";
 import Image from "next/image";
 import SearchBar from "../SearchBar";
 import { ServerMotion, MotionItem } from "@/components/motion";
@@ -43,13 +43,23 @@ export default async function HeroSection() {
                         <p className="text-sm font-medium">{t('hero.followUs')}</p>
                         <div className="flex gap-4">
                             <Button asChild size={"icon"} variant="outline" className="border-[0.8px] border-border shadow-none rounded-md [&_svg]:size-6">
-                                <Link href={"#"}>
+                                <Link href={"https://www.instagram.com/mocsyr/"}>
                                     <IconBrandInstagram className="text-primary" />
                                 </Link>
                             </Button>
                             <Button asChild size={"icon"} variant="outline" className="border-[0.8px] border-border shadow-none rounded-md [&_svg]:size-6">
-                                <Link href={"#"}>
+                                <Link href={"https://www.facebook.com/profile.php?id=61574722665055"}>
                                     <IconBrandFacebook className="text-primary" />
+                                </Link>
+                            </Button>
+                            <Button asChild size={"icon"} variant="outline" className="border-[0.8px] border-border shadow-none rounded-md [&_svg]:size-6">
+                                <Link href={"https://x.com/mocsyr"}>
+                                    <IconBrandX className="text-primary" />
+                                </Link>
+                            </Button>
+                            <Button asChild size={"icon"} variant="outline" className="border-[0.8px] border-border shadow-none rounded-md [&_svg]:size-6">
+                                <Link href={"https://www.youtube.com/@MinistryofCultureSyria"}>
+                                    <IconBrandYoutube className="text-primary" />
                                 </Link>
                             </Button>
                         </div>

@@ -2,7 +2,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { getNews } from "@/services/news-service";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
-import { ServerMotion, MotionItem } from "@/components/motion";
+import { ServerMotion } from "@/components/motion";
 import { Button } from "@/components/ui/button";
 import { IconArrowLeft, IconArrowRight, IconCalendar } from "@tabler/icons-react";
 import { NewsCard } from "@/components/news-card";
@@ -16,7 +16,7 @@ export default async function NewsSection() {
 
     return (
         <section className="container py-12 md:py-20" id="news">
-            <ServerMotion animation="fadeUp" className="flex flex-col gap-10">
+            <div className="flex flex-col gap-10">
                 <div className="flex flex-col md:flex-row items-start justify-between gap-4">
                     <div className="space-y-2">
                         <h2 className="text-2xl md:text-3xl text-start font-medium text-foreground">
@@ -34,15 +34,16 @@ export default async function NewsSection() {
 
                 <div className="flex md:flex-row flex-wrap gap-8 justify-center ">
                     {news.map((item, index) => (
-                        <NewsCard
-                            key={item.id}
-                            news={item}
-                            readMoreTitle={t('readMore')}
-                            className="max-w-96"
-                        />
+                        <ServerMotion key={item.id} animation="fadeUp" staggerIndex={index} hover="lift" viewport="early">
+                            <NewsCard
+                                news={item}
+                                readMoreTitle={t('readMore')}
+                                className="max-w-96"
+                            />
+                        </ServerMotion>
                     ))}
                 </div>
-            </ServerMotion>
+            </div>
         </section>
     );
 }

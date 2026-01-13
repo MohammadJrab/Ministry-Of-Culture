@@ -13,6 +13,8 @@
     "placeholder": "Search"
   },
   "footer": {
+    "developedBy": "Developed By ",
+    "qmindTech": "QmindTech",
     "companyInfoTitle": "Ministry of Culture",
     "sections": {
       "sections": {
