@@ -38,7 +38,7 @@ export default async function NewsSection() {
                             <NewsCard
                                 news={item}
                                 readMoreTitle={t('readMore')}
-                                className="max-w-96"
+                                className="max-w-96 max-h-96"
                             />
                         </ServerMotion>
                     ))}
