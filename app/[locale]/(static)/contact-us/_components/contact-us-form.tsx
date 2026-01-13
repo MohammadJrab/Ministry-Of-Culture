@@ -26,7 +26,7 @@ export default function ContactUsForm() {
             `${t('messageLabel')}:\n${message}`
         );
 
-        window.location.href = `mailto:moc.syria@gmail.com?subject=${subject}&body=${body}`
+        window.location.href = `mailto:info@moc.gov.sy?subject=${subject}&body=${body}`
     }
 
     return (

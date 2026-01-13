@@ -240,69 +240,68 @@
     "byPhone": "By Phone",
     "byEmail": "By Email",
     "address": "Address",
-    "addressLine1": "Damascus - Marjeh Square",
-    "addressLine2": "Al-Qahawi Street"
-  },
-  "common": {
-    "any": "Any",
-    "search": "Search...",
-    "loading": "Loading...",
-    "seeMore": "See More",
-    "noResults": "No results!",
-    "resultsCount": "{count} {count, plural, =1 {result} other {results}}",
-    "noResultsFound": "No results found",
-    "clearFilters": "Clear filters"
-  },
-  "datePicker": {
-    "triggerTitle": "Date filter",
-    "resetButton": "Reset",
-    "applyButton": "Apply"
-  },
-  "filters": {
-    "categoryTitle": "Category filter",
-    "cityTitle": "City filter",
-    "all": "All"
-  },
-  "notFound": {
-    "message": "We apologize, but the page you requested cannot be found.",
-    "goHome": "Return to Homepage"
-  },
-  "errorPage": {
-    "wrong": "Something went wrong!",
-    "tryAgain": "Try Again",
-    "connectionError": "Connection error. Please verify your internet connection and retry.",
-    "serverUpdating": "Server update in progress. Please wait...",
-    "goHome": "Go Home"
-  },
-  "metadata": {
-    "home": {
-      "title": "Ministry Of Culture",
-      "description": "The official website of the Ministry of Culture in the Syrian Arab Republic. Discover Syria's rich heritage, cultural events, news, and the ministry's vision for a prosperous future.",
-      "appName": "Ministry Of Culture",
-      "keywords": [
-        "Ministry of Culture",
-        "Syria",
-        "Culture",
-        "Heritage",
-        "Events",
-        "News",
-        "Damascus",
-        "Art",
-        "History"
-      ]
+    "addressLine": "Damascus Square, Al-Maliki, Talaat Shoura",
+    "common": {
+      "any": "Any",
+      "search": "Search...",
+      "loading": "Loading...",
+      "seeMore": "See More",
+      "noResults": "No results!",
+      "resultsCount": "{count} {count, plural, =1 {result} other {results}}",
+      "noResultsFound": "No results found",
+      "clearFilters": "Clear filters"
     },
-    "newsPage": {
-      "title": "Latest News and Updates | Ministry Of Culture",
-      "description": "Stay informed with the most recent news and announcements. Filter by date and explore news articles relevant to your interests."
+    "datePicker": {
+      "triggerTitle": "Date filter",
+      "resetButton": "Reset",
+      "applyButton": "Apply"
     },
-    "news": {
-      "title": "{news} ,news | Ministry Of Culture",
-      "fallbackTitle": "News | Ministry Of Culture",
-      "description": "Read the latest news from Ministry Of Culture. Discover details, and see how we are shaping the cultural landscape."
+    "filters": {
+      "categoryTitle": "Category filter",
+      "cityTitle": "City filter",
+      "all": "All"
     },
     "notFound": {
-      "title": "404 | Ministry Of Culture",
-      "description": "The page you're looking for doesn't exist."
+      "message": "We apologize, but the page you requested cannot be found.",
+      "goHome": "Return to Homepage"
+    },
+    "errorPage": {
+      "wrong": "Something went wrong!",
+      "tryAgain": "Try Again",
+      "connectionError": "Connection error. Please verify your internet connection and retry.",
+      "serverUpdating": "Server update in progress. Please wait...",
+      "goHome": "Go Home"
+    },
+    "metadata": {
+      "home": {
+        "title": "Ministry Of Culture",
+        "description": "The official website of the Ministry of Culture in the Syrian Arab Republic. Discover Syria's rich heritage, cultural events, news, and the ministry's vision for a prosperous future.",
+        "appName": "Ministry Of Culture",
+        "keywords": [
+          "Ministry of Culture",
+          "Syria",
+          "Culture",
+          "Heritage",
+          "Events",
+          "News",
+          "Damascus",
+          "Art",
+          "History"
+        ]
+      },
+      "newsPage": {
+        "title": "Latest News and Updates | Ministry Of Culture",
+        "description": "Stay informed with the most recent news and announcements. Filter by date and explore news articles relevant to your interests."
+      },
+      "news": {
+        "title": "{news} ,news | Ministry Of Culture",
+        "fallbackTitle": "News | Ministry Of Culture",
+        "description": "Read the latest news from Ministry Of Culture. Discover details, and see how we are shaping the cultural landscape."
+      },
+      "notFound": {
+        "title": "404 | Ministry Of Culture",
+        "description": "The page you're looking for doesn't exist."
+      }
     }
   },
   "readMore": "Read More"

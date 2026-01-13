@@ -60,8 +60,8 @@ export default async function ContactUsSection() {
                                 </div>
                                 <div className="flex flex-col items-start">
                                     <span className="font-semibold text-lg">{t('byPhone')}</span>
-                                    <span dir="ltr" className="text-sm md:text-md font-medium">+963 9452 243 11</span>
-                                    <span dir="ltr" className="text-sm md:text-md font-medium">+963 9452 243 12</span>
+                                    <span dir="ltr" className="text-md md:text-md font-medium">3331556</span>
+                                    <span dir="ltr" className="text-md md:text-md font-medium">3331557</span>
                                 </div>
 
                             </div>
@@ -73,8 +73,7 @@ export default async function ContactUsSection() {
                                 </div>
                                 <div className="flex flex-col items-start">
                                     <span className="font-semibold text-lg">{t('byEmail')}</span>
-                                    <span className="text-sm md:text-md font-medium">moc@sy.com</span>
-                                    <span className="text-sm md:text-md font-medium">moc-backup@sy.com</span>
+                                    <span className="text-md md:text-md font-medium">info@moc.gov.sy</span>
                                 </div>
                             </div>
 
@@ -85,18 +84,20 @@ export default async function ContactUsSection() {
                                 </div>
                                 <div className="flex flex-col items-start">
                                     <span className="font-semibold text-lg">{t('address')}</span>
-                                    <span className="text-sm md:text-md font-medium">{t('addressLine1')}</span>
-                                    <span className="text-sm md:text-md font-medium">{t('addressLine2')}</span>
+                                    <span className="text-sm md:text-md font-medium">{t('addressLine')}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="relative h-[40%] w-full">
-                        <Image
-                            src={`/images/contact-map-${locale}.jpg`}
-                            alt={t('mapAlt')}
-                            fill
-                            className="object-cover rounded-bse-3xl shadow-lg"
+                        <iframe
+                            src="https://maps.google.com/maps?q=33.523083,36.280222&z=15&output=embed"
+                            width="100%"
+                            height="100%"
+                            className="rounded-bse-3xl shadow-lg border-0"
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
                         />
                     </div>
                 </m.div>
