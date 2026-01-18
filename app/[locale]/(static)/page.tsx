@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 import SyriaSection from '../_components/sections/syria-section';
 import { CulturalPrinciplesSection } from '../_components/sections/cultural-principles-section';
-import TheUnescoSection from '../_components/sections/TheUnescoSection';
+import EagleHeritageSection from '../_components/sections/EagleHeritageSection';
 import HeroSection from "../_components/sections/hero";
 import ScrollToTopButton from "../_components/scroll-to-top-button";
 import VisionSection from "../_components/sections/VisionSection";
@@ -16,7 +16,7 @@ export default async function HomePage() {
                 <SyriaSection />
                 <NewsSection />
                 <CulturalPrinciplesSection />
-                <TheUnescoSection />
+                <EagleHeritageSection />
                 <VisionSection />
             </div>
             <ScrollToTopButton />

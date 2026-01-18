@@ -157,6 +157,48 @@
       }
     }
   },
+  "eagleHeritage": {
+    "title": "The Eagle in Syrian Cultural Memory",
+    "subtitle": "Symbol of Strength and Balance",
+    "caption": "A symbol of the ability to protect the land and preserve society",
+    "introduction": "The eagle occupies a place in Syrian cultural memory as a symbol of strength, balance, and the ability to protect the land. It was known in ancient Eastern civilizations as a bird embodying prestige and sublimity, and has been used throughout the ages as a sign of stability and a state capable of preserving its society and defending its borders.",
+    "footnote": "It is considered one of the oldest models of symbolic expression in the Near East",
+    "timelineTitle": "The Eagle's Journey Through History",
+    "timeline": {
+      "neolithic": {
+        "period": "Neolithic Period",
+        "year": "8500 BC",
+        "title": "Tell al-Jarf al-Ahmar",
+        "description": "The oldest archaeological evidence of the eagle symbol in Syria, a basalt piece representing a bird of prey from the eagle family"
+      },
+      "ancient": {
+        "period": "Ancient Eastern Civilizations",
+        "year": "",
+        "title": "Prestige and Sublimity",
+        "description": "The eagle was known as a bird embodying prestige and sublimity, used throughout the ages as a sign of stability and capable statehood"
+      },
+      "islamic": {
+        "period": "Arab and Islamic Heritage",
+        "year": "",
+        "title": "Strength and Wisdom",
+        "description": "The eagle was associated with major historical milestones and symbolic significance, representing strength and wisdom in public affairs management"
+      },
+      "modern": {
+        "period": "Modern Syria",
+        "year": "20th Century",
+        "title": "National Identity",
+        "description": "The golden eagle became a visual emblem of national identity, combining civilizational heritage with the expression of sovereignty"
+      }
+    },
+    "closingStatement": "Today, in post-liberation Syria, the eagle symbol emerges within a national narrative that affirms culture's role in consolidating identity and building society",
+    "motto": "Towards an inclusive culture… that narrates memory and builds humanity",
+    "altTexts": {
+      "mainImage": "Syrian Golden Eagle",
+      "artifactImage": "Ancient artifact - Tell al-Jarf al-Ahmar",
+      "artifactCaption": "Tell al-Jarf al-Ahmar"
+    },
+    "yearFallback": "Ancient Times"
+  },
   "visionSection": {
     "quote": "“Vision is neither a slogan nor a <secondary>decision.</secondary>. Today, it stands as the title of recovery, <primary>the restoration of the civilizational narrative, and the building of the future.”</primary>"
   },
