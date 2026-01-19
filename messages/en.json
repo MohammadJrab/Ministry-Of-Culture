@@ -208,6 +208,79 @@
       "description": "To consolidate Syria's position as the heart of the world and to shape a prosperous and renewed future"
     }
   },
+  "aboutMinistryPage": {
+    "whoWeAre": {
+      "title": "Who We Are",
+      "subtitle": "Ministry of Culture",
+      "imageAlt": "Ministry of Culture Image",
+      "since": "Ministry Established",
+      "establishment": "The Ministry of Culture was established in the Syrian Arab Republic on November 23, 1958, as the national body responsible for formulating cultural policies, preserving tangible and intangible cultural heritage, supporting arts and creativity, and expanding community participation in cultural life, in a way that preserves the Syrian civilizational identity and enhances its presence regionally and internationally.",
+      "postLiberation": "In the post-liberation phase, the Ministry is working to rebuild its role after decades during which the cultural space was restricted and knowledge and creative institutions were marginalized, which weakened the ability of culture to perform its societal function. Based on this, the Ministry today seeks to consolidate cultural work as a space for free dialogue and responsible creativity, and a fundamental pillar in building a just, supportive, and diverse society.",
+      "futureDirection": "In this context, the Ministry is moving towards developing a national cultural system based on knowledge, cultural justice, community participation, and empowering cultural actors in various governorates, in a way that restores culture's role as a driving force for development and stability, and a foundation for building an inclusive national identity in the transitional phase and beyond.",
+      "values": {
+        "knowledge": "Knowledge",
+        "justice": "Cultural Justice",
+        "participation": "Participation",
+        "empowerment": "Empowerment"
+      }
+    },
+    "visionMission": {
+      "vision": {
+        "title": "Vision",
+        "description": "Building a cultural sector that reflects the depth of Syria's civilization, responds to the needs of society, and makes culture a unifying force that strengthens national identity, connects the past with the present, the inside with the outside, and elevates the aspirations of Syrians towards a more stable and prosperous future."
+      },
+      "mission": {
+        "title": "Mission",
+        "description": "The Ministry of Culture is committed to developing cultural policies and programs that ensure the right of all citizens to access and participate in culture, protect tangible and intangible cultural heritage and reintegrate it into public life, support arts, creative industries, and crafts as economic and developmental tributaries, enhance Syrian cultural presence regionally and internationally, and empower children, youth, women, and local communities to contribute to building a national cultural scene that reflects the Syrian society's energies and civilizational history."
+      }
+    },
+    "ministerWord": {
+      "title": "Word from the Minister of Culture",
+      "subtitle": "Minister's Message",
+      "ministerName": "Mohammad Yaseen Al-Saleh",
+      "ministerTitle": "Minister of Culture",
+      "paragraph1": "For thousands of years, Syria has been a cradle of civilizations, a starting point for the alphabet, a meeting place for religions, and a stage for thought, poetry, and art. Today, as we face major challenges, we believe that culture is not a luxury, but a national necessity, and an integral part of our project to repair the soul, build the human being, and restore the civilizational narrative.",
+      "paragraph2": "At the Ministry of Culture, we work with an open mind and a heart that understands the pulse of the Syrian street. We seek to empower creativity, embrace youth, preserve heritage, and enhance dialogue among all components of society, both inside Syria and in the diaspora.",
+      "paragraph3": "I invite you to be partners in shaping Syria's cultural future, each from their own position, for culture is not monopolized by institutions, but is the pulse of daily life, in the home, in the street, in the school, in kind words, refined behavior, and noble stances.",
+      "closingQuote": "Together we write a new chapter in Syria's memory, titled: Dignity, Awareness, and Beauty."
+    },
+    "organizationalStructure": {
+      "title": "Organizational Structure",
+      "subtitle": "Directorates and Entities Affiliated with the Ministry of Culture",
+      "directorates": {
+        "title": "Directorates",
+        "items": {
+          "administrativeDevelopment": "Administrative Development Directorate",
+          "copyrightProtection": "Copyright and Neighboring Rights Protection Directorate",
+          "legalAffairs": "Legal Affairs Directorate",
+          "technologyDigitalTransformation": "Technology and Digital Transformation Directorate",
+          "planningStatistics": "Planning and Statistics Directorate",
+          "executiveSupport": "Executive Support Directorate",
+          "fineArts": "Fine Arts Directorate",
+          "childCulture": "Child Culture Directorate",
+          "theaterMusic": "Theater and Music Directorate",
+          "adultEducation": "Adult Education and Cultural Development Directorate",
+          "provincialCulture": "Provincial Culture Directorates",
+          "intangibleHeritage": "Intangible Heritage Directorate",
+          "investment": "Investment Directorate"
+        }
+      },
+      "affiliatedEntities": {
+        "title": "Entities Affiliated with the Ministry",
+        "items": {
+          "nationalLibrary": "National Library",
+          "antiquitiesMuseums": "General Directorate of Antiquities and Museums",
+          "damascusOpera": "Damascus Opera House",
+          "cinemaFoundation": "General Foundation for Cinema",
+          "syrianBookAuthority": "Syrian General Book Authority",
+          "arabEncyclopedia": "Arab Encyclopedia Authority",
+          "musicInstitute": "Higher Institute of Music",
+          "theaterInstitute": "Higher Institute of Theatrical Arts",
+          "cinemaInstitute": "Higher Institute of Cinematic Arts"
+        }
+      }
+    }
+  },
   "nationalCulturalIdentity": {
     "title": "Ministry of Culture… the identity that unites Syrians"
   },

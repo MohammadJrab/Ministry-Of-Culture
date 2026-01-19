@@ -1,5 +1,5 @@
 ﻿import Image from "next/image";
-import { IconPhone, IconPrinter, IconMail, IconMapPinShare } from "@tabler/icons-react";
+import { IconPhone, IconPrinter, IconMail, IconMapPinShare, IconLoader2 } from "@tabler/icons-react";
 import ContactUsForm from "@/app/[locale]/(static)/contact-us/_components/contact-us-form";
 import { getLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
@@ -90,8 +90,11 @@ export default async function ContactUsSection() {
                         </div>
                     </div>
                     <div className="relative h-[40%] w-full">
+                        <div className="absolute -z-10 inset-0 bg-primary flex items-center justify-center rounded-ee-3xl ">
+                            <IconLoader2 className="animate-spin text-white " size={32} />
+                        </div>
                         <iframe
-                            src="https://maps.google.com/maps?q=33.523083,36.280222&z=15&output=embed"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d927.9997058296512!2d36.27940427625233!3d33.522906356509054!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e737bcd3711d%3A0xbf1630723c5e1394!2sMinistry%20of%20Culture!5e0!3m2!1sen!2sus!4v1768815784399!5m2!1sen!2sus"
                             width="100%"
                             height="100%"
                             className="rounded-bse-3xl shadow-lg border-0"

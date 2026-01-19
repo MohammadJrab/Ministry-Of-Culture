@@ -422,6 +422,18 @@
     --color-gold: var(--gold);
     --color-lightBlack: var(--lightBlack);
     --color-lightPrimaryGreen: var(--lightPrimaryGreen);
+    --animate-shine: shine var(--duration) infinite linear;
+  @keyframes shine {
+  0% {
+    background-position: 0% 0%;
+        }
+  50% {
+    background-position: 100% 100%;
+        }
+  to {
+    background-position: 0% 0%;
+        }
+    }
 
 }
 
@@ -479,5 +491,14 @@
 
     75% {
         transform: translateY(5px) scale(0.9);
+    }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
     }
 }

@@ -1,20 +1,17 @@
 import React from 'react'
-import { getTranslations } from 'next-intl/server'
-import AboutMinistryHero from './_components/sections/aboutMinistryHero';
-import { NationalCulturalIdentitySection } from './_components/sections/nationalCulturalIdentitySection';
-import { OurTasksSection } from './_components/sections/ourTasks';
-import OurMessageSection from './_components/sections/OurMessageSection';
-import SyrianStorySection from './_components/sections/syrianStory';
+import WhoWeAreSection from './_components/sections/WhoWeAreSection';
+import VisionMissionSection from './_components/sections/VisionMissionSection';
+import MinisterWordSection from './_components/sections/MinisterWordSection';
+import OrganizationalStructureSection from './_components/sections/OrganizationalStructureSection';
 
 export default async function AboutMinistry() {
     return (
         <main>
-            <AboutMinistryHero />
-            <NationalCulturalIdentitySection />
-            <OurTasksSection />
-            <OurMessageSection />
-            <SyrianStorySection />
+            {/* <AboutMinistryHero /> */}
+            <WhoWeAreSection />
+            <VisionMissionSection />
+            <MinisterWordSection />
+            <OrganizationalStructureSection />
         </main>
     )
 }
-
