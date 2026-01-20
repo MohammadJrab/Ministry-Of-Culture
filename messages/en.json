@@ -13,7 +13,7 @@
     "placeholder": "Search"
   },
   "footer": {
-    "developedBy": "Developed By ",
+    "developedBy": "Developed by ",
     "qmindTech": "QmindTech",
     "companyInfoTitle": "Ministry of Culture",
     "sections": {
@@ -249,6 +249,7 @@
       "subtitle": "Directorates and Entities Affiliated with the Ministry of Culture",
       "directorates": {
         "title": "Directorates",
+        "count": "{count} directorates",
         "items": {
           "administrativeDevelopment": "Administrative Development Directorate",
           "copyrightProtection": "Copyright and Neighboring Rights Protection Directorate",
@@ -267,6 +268,7 @@
       },
       "affiliatedEntities": {
         "title": "Entities Affiliated with the Ministry",
+        "count": "{count} entities",
         "items": {
           "nationalLibrary": "National Library",
           "antiquitiesMuseums": "General Directorate of Antiquities and Museums",

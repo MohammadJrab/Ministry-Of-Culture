@@ -13,8 +13,8 @@
     "placeholder": "بحث"
   },
   "footer": {
-    "developedBy": "طور بواسطة ",
-    "qmindTech": "QmindTech",
+    "developedBy": "من تطوير",
+    "qmindTech": "QMIND Tech",
     "companyInfoTitle": "وزارة الثقافة",
     "sections": {
       "sections": {
@@ -249,6 +249,7 @@
       "subtitle": "المديريات والجهات المرتبطة بوزارة الثقافة",
       "directorates": {
         "title": "المديريات",
+        "count": "{count} مديرية",
         "items": {
           "administrativeDevelopment": "مديرية التنمية الإدارية",
           "copyrightProtection": "مديرية حماية حقوق المؤلف والحقوق المجاورة",
@@ -267,6 +268,7 @@
       },
       "affiliatedEntities": {
         "title": "الجهات المرتبطة بالوزارة",
+        "count": "{count} جهات",
         "items": {
           "nationalLibrary": "المكتبة الوطنية",
           "antiquitiesMuseums": "المديرية العامة للآثار والمتاحف",

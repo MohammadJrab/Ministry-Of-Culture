@@ -129,7 +129,7 @@ export default function OrganizationalStructureSection() {
                             <h3 className="text-2xl md:text-3xl font-bold text-[#2B3130]">
                                 {t('directorates.title')}
                             </h3>
-                            <p className="text-[#676767] text-sm mt-1">{directorates.length} مديرية</p>
+                            <p className="text-[#676767] text-sm mt-1">{t('directorates.count', { count: directorates.length })}</p>
                         </div>
                     </m.div>
 
@@ -205,7 +205,7 @@ export default function OrganizationalStructureSection() {
                             <h3 className="text-2xl md:text-3xl font-bold text-[#2B3130]">
                                 {t('affiliatedEntities.title')}
                             </h3>
-                            <p className="text-[#676767] text-sm mt-1">{affiliatedEntities.length} جهات</p>
+                            <p className="text-[#676767] text-sm mt-1">{t('affiliatedEntities.count', { count: affiliatedEntities.length })}</p>
                         </div>
                     </m.div>
 

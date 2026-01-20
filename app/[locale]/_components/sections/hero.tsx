@@ -14,13 +14,13 @@ export default async function HeroSection() {
 
             <ServerMotion animation="stagger" trigger="onMount" className="grid grid-cols-1 lg:grid-cols-2 justify-center sm:gap-10 max-sm:gap-4 mx-auto mt-40 lg:mt-60 items-center">
                 <MotionItem className="flex flex-col justify-center items-center lg:items-start lg:ms-11 text-center lg:text-start">
-                    <h3 className="text-lg md:text-3xl font-[400s] leading-normal text-foreground max-w-2xl">
+                    <h3 className="text-lg md:text-3xl font-[400s] leading-normal text-foreground max-w-3xl">
                         {t.rich('hero.quotePart1', {
                             primary: (chunks) => <span className="text-primary">{chunks}</span>,
                             secondary: (chunks) => <span className="text-secondary">{chunks}</span>,
                             br: () => <br />
                         })}
-                        <span className="block text-end mt-5 ms-auto">
+                        <span className="block text-start mt-5">
                             {t.rich('hero.quotePart2', {
                                 primary: (chunks) => <span className="text-primary">{chunks}</span>,
                                 secondary: (chunks) => <span className="text-secondary">{chunks}</span>,

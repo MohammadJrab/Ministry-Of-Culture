@@ -51,7 +51,7 @@ export default async function VisionMissionSection() {
                                         </svg>
                                     </div>
                                     {/* Decorative Line */}
-                                    <div className="absolute top-1/2 left-24 w-20 h-px bg-gradient-to-r from-[#B9A779] to-transparent" />
+                                    <div className="absolute top-1/2 start-24 w-20 h-px bg-gradient-to-r from-[#B9A779] to-transparent" />
                                 </div>
 
                                 {/* Title */}
@@ -86,7 +86,7 @@ export default async function VisionMissionSection() {
                                         </svg>
                                     </div>
                                     {/* Decorative Line */}
-                                    <div className="absolute top-1/2 left-24 w-20 h-px bg-gradient-to-r from-[#428177] to-transparent" />
+                                    <div className="absolute top-1/2 start-24 w-20 h-px bg-gradient-to-r from-[#428177] to-transparent" />
                                 </div>
 
                                 {/* Title */}
