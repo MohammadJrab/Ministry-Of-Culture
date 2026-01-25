@@ -60,9 +60,7 @@ export default async function MinisterWordSection() {
                                         <div className="w-40 h-40 lg:w-48 lg:h-48 rounded-full bg-gradient-to-br from-[#428177] to-[#B9A779] p-1">
                                             <div className="w-full h-full rounded-full bg-[#2B3130] flex items-center justify-center overflow-hidden">
                                                 {/* Ministry Logo as Placeholder */}
-                                                <svg className="w-20 h-20 text-[#B9A779]" fill="currentColor" viewBox="0 0 24 24">
-                                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                                                </svg>
+                                                <Image src="/images/ministry.jpg" objectFit='cover' alt="Syrian Minister of Culture" width={200} height={200} />
                                             </div>
                                         </div>
                                         {/* Decorative Ring */}
@@ -104,10 +102,11 @@ export default async function MinisterWordSection() {
                                         <ServerMotion animation="fadeUp" staggerIndex={3}>
                                             <div className="mt-8 pt-8 border-t border-[#E8EBE9]">
                                                 <blockquote className="relative">
-                                                    <div className="absolute -top-4 -right-2 text-6xl text-[#B9A779]/20 font-serif">"</div>
+                                                    <div className="absolute -top-4 -start-5 text-6xl text-[#B9A779]/20 font-serif">"</div>
                                                     <p className="text-xl md:text-2xl font-medium text-[#428177] leading-relaxed italic">
                                                         {t('closingQuote')}
                                                     </p>
+                                                    <div className="absolute -bottom-5 -end-5 rtl:start-44 text-6xl text-[#B9A779]/20 font-serif">"</div>
                                                 </blockquote>
                                             </div>
                                         </ServerMotion>

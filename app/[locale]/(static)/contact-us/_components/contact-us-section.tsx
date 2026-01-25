@@ -60,8 +60,8 @@ export default async function ContactUsSection() {
                                 </div>
                                 <div className="flex flex-col items-start">
                                     <span className="font-semibold text-lg">{t('byPhone')}</span>
-                                    <span dir="ltr" className="text-md md:text-md font-medium">3331556</span>
-                                    <span dir="ltr" className="text-md md:text-md font-medium">3331557</span>
+                                    <span dir="ltr" className="text-md md:text-md font-medium">+963 3331556</span>
+                                    <span dir="ltr" className="text-md md:text-md font-medium">+963 3331557</span>
                                 </div>
 
                             </div>

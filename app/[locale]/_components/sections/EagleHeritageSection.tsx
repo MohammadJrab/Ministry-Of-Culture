@@ -162,7 +162,7 @@ const EagleHeritageSection = async () => {
                                     {t('closingStatement')}
                                 </p>
                                 <div className="mt-4 text-right">
-                                    <span className="text-[#b0915b] text-2xl font-bold">{t('motto')}</span>
+                                    <span className="text-[#d7bc8f] text-2xl font-bold">{t('motto')}</span>
                                 </div>
                             </div>
                         </ServerMotion>
