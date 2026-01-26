@@ -15,11 +15,11 @@ const SearchBar = async () => {
                     name="Keyword"
                     type="text"
                     placeholder={t('placeholder')}
-                    className="flex-1 h-14 px-6 bg-transparent text-white placeholder:text-white/60 text-right outline-none"
+                    className="flex-1 h-14 px-6 bg-transparent text-white placeholder:text-white/60 text-start outline-none"
                 />
 
                 {/* Divider */}
-                <div className="w-px h-8 bg-white/20" />
+                <div className="w-px me-2 h-8 bg-white/20" />
 
                 {/* Search Button */}
                 <Button

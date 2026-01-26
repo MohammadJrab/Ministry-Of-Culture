@@ -99,12 +99,12 @@ export default function OrganizationalStructureSection() {
                     className="text-center mb-20"
                 >
                     <div className="inline-flex items-center justify-center gap-3 mb-6">
-                        <span className="h-px w-12 bg-gradient-to-r from-transparent to-[#428177]" />
+                        <span className="h-px w-12 bg-gradient-to-r  rtl:bg-gradient-to-l from-transparent to-[#428177]" />
                         <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#428177]/10 border border-[#428177]/20">
                             <div className="w-2 h-2 rounded-full bg-[#428177] animate-pulse" />
                             <span className="text-[#428177] font-medium text-sm">{t('subtitle')}</span>
                         </div>
-                        <span className="h-px w-12 bg-gradient-to-l from-transparent to-[#428177]" />
+                        <span className="h-px w-12 bg-gradient-to-l  rtl:bg-gradient-to-r from-transparent to-[#428177]" />
                     </div>
                     <h2 className="text-2xl md:text-3xl lg:text-4xl pb-6 font-bold bg-gradient-to-r from-[#2B3130] via-[#428177] to-[#2B3130] bg-clip-text text-transparent">
                         {t('title')}
@@ -123,7 +123,7 @@ export default function OrganizationalStructureSection() {
                             <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#428177] to-[#2B3130] flex items-center justify-center shadow-lg shadow-[#428177]/25 text-white">
                                 <BuildingIcon />
                             </div>
-                            <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-[#428177] to-[#B9A779] opacity-20 blur-sm -z-10" />
+                            <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br  from-[#428177] to-[#B9A779] opacity-20 blur-sm -z-10" />
                         </div>
                         <div>
                             <h3 className="text-2xl md:text-3xl font-bold text-[#2B3130]">
@@ -171,7 +171,7 @@ export default function OrganizationalStructureSection() {
                     transition={{ duration: 0.8 }}
                     className="flex items-center justify-center gap-4 mb-24"
                 >
-                    <div className="h-px flex-1 max-w-48 bg-gradient-to-r from-transparent via-[#B9A779]/50 to-[#B9A779]" />
+                    <div className="h-px flex-1 max-w-48 bg-gradient-to-r rtl:bg-gradient-to-l from-transparent via-[#B9A779]/50 to-[#B9A779]" />
                     <div className="flex gap-2">
                         {[1, 2, 3].map((i) => (
                             <m.div
@@ -184,7 +184,7 @@ export default function OrganizationalStructureSection() {
                             />
                         ))}
                     </div>
-                    <div className="h-px flex-1 max-w-48 bg-gradient-to-l from-transparent via-[#B9A779]/50 to-[#B9A779]" />
+                    <div className="h-px flex-1 max-w-48 bg-gradient-to-l rtl:bg-gradient-to-r from-transparent via-[#B9A779]/50 to-[#B9A779]" />
                 </m.div>
 
                 {/* Affiliated Entities Section */}

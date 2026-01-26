@@ -23,13 +23,13 @@ export default async function VisionMissionSection() {
                 {/* Section Header */}
                 <ServerMotion animation="fadeUp" className="text-center mb-16">
                     <div className="inline-flex items-center gap-4 mb-6">
-                        <div className="h-px w-20 bg-gradient-to-r from-transparent to-[#B9A779]" />
+                        <div className="h-px w-20 bg-gradient-to-r rtl:bg-gradient-to-l from-transparent to-[#B9A779]" />
                         <div className="flex gap-2">
                             <span className="w-2 h-2 rounded-full bg-[#428177]" />
                             <span className="w-2 h-2 rounded-full bg-[#B9A779]" />
                             <span className="w-2 h-2 rounded-full bg-[#428177]" />
                         </div>
-                        <div className="h-px w-20 bg-gradient-to-l from-transparent to-[#B9A779]" />
+                        <div className="h-px w-20 bg-gradient-to-l rtl:bg-gradient-to-r from-transparent to-[#B9A779]" />
                     </div>
                 </ServerMotion>
 
@@ -39,7 +39,7 @@ export default async function VisionMissionSection() {
                     <ServerMotion animation="slideLeft" hover="lift">
                         <div className="group relative h-full">
                             {/* Card Glow Effect */}
-                            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#428177] to-[#B9A779] rounded-3xl opacity-30 group-hover:opacity-50 blur transition-opacity duration-500" />
+                            <div className="absolute -inset-0.5 bg-gradient-to-r  from-[#428177] to-[#B9A779] rounded-3xl opacity-30 group-hover:opacity-50 blur transition-opacity duration-500" />
 
                             <div className="relative h-full bg-gradient-to-br from-[#2B3130] to-[#1a1f1e] rounded-3xl p-8 lg:p-10 border border-white/10">
                                 {/* Icon */}
@@ -51,7 +51,7 @@ export default async function VisionMissionSection() {
                                         </svg>
                                     </div>
                                     {/* Decorative Line */}
-                                    <div className="absolute top-1/2 start-24 w-20 h-px bg-gradient-to-r from-[#B9A779] to-transparent" />
+                                    <div className="absolute top-1/2 start-24 w-20 h-px bg-gradient-to-r rtl:bg-gradient-to-l from-[#B9A779] to-transparent" />
                                 </div>
 
                                 {/* Title */}
@@ -86,7 +86,7 @@ export default async function VisionMissionSection() {
                                         </svg>
                                     </div>
                                     {/* Decorative Line */}
-                                    <div className="absolute top-1/2 start-24 w-20 h-px bg-gradient-to-r from-[#428177] to-transparent" />
+                                    <div className="absolute top-1/2 start-24 w-20 h-px bg-gradient-to-r rtl:bg-gradient-to-l from-[#428177] to-transparent" />
                                 </div>
 
                                 {/* Title */}

@@ -17,11 +17,11 @@ export default async function WhoWeAreSection() {
                 {/* Section Header */}
                 <ServerMotion animation="fadeUp" className="text-center mb-16">
                     <div className="inline-flex items-center gap-4 mb-6">
-                        <div className="h-px w-16 md:w-24 bg-gradient-to-r from-transparent to-[#B9A779]" />
+                        <div className="h-px w-16 md:w-24 bg-gradient-to-r rtl:bg-gradient-to-l from-transparent to-[#B9A779]" />
                         <span className="text-[#428177] font-medium text-sm tracking-wider uppercase">
                             {t('subtitle')}
                         </span>
-                        <div className="h-px w-16 md:w-24 bg-gradient-to-l from-transparent to-[#B9A779]" />
+                        <div className="h-px w-16 md:w-24 bg-gradient-to-l rtl:bg-gradient-to-r from-transparent to-[#B9A779]" />
                     </div>
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#2B3130]">
                         {t('title')}
@@ -47,7 +47,7 @@ export default async function WhoWeAreSection() {
                             </div>
 
                             {/* Decorative Badge */}
-                            <div className="absolute -bottom-6 -right-6 lg:-right-10 bg-gradient-to-br from-[#428177] to-[#2B3130] text-white p-6 rounded-2xl shadow-xl">
+                            <div className="absolute -bottom-6 -right-6 lg:-right-10 bg-gradient-to-br  from-[#428177] to-[#2B3130] text-white p-6 rounded-2xl shadow-xl">
                                 <div className="text-center">
                                     <span className="block text-3xl md:text-4xl font-bold mb-1">1958</span>
                                     <span className="text-sm opacity-80">{t('since')}</span>
@@ -55,7 +55,7 @@ export default async function WhoWeAreSection() {
                             </div>
 
                             {/* Background Decorative Element */}
-                            <div className="absolute -z-10 -top-4 -left-4 w-full h-full rounded-2xl bg-gradient-to-br from-[#B9A779]/20 to-[#428177]/20" />
+                            <div className="absolute -z-10 -top-4 -left-4 w-full h-full rounded-2xl bg-gradient-to-br  from-[#B9A779]/20 to-[#428177]/20" />
                         </div>
                     </ServerMotion>
 

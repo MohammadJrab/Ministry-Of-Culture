@@ -13,7 +13,7 @@ const CulturalCard: React.FC<CulturalPrincipleProps> = ({
 }) => {
     return (
         <div
-            className="group relative max-w-80 md:h-108 md:max-w-96 flex flex-col p-8 bg-[#F4F6F5] rounded-2xl border border-white shadow-sm  overflow-hidden transition-all duration-500"
+            className="group relative max-w-80  h-full md:max-w-96 flex flex-col p-8 bg-[#F4F6F5] rounded-2xl border border-white shadow-sm  overflow-hidden transition-all duration-500"
         >
             {/* Overlay */}
             <div
@@ -28,7 +28,7 @@ const CulturalCard: React.FC<CulturalPrincipleProps> = ({
 
             <div className="absolute top-3 right-3 w-16 h-16 border-t-4 border-r-4 border-white rounded-tr-lg pointer-events-none opacity-50 z-10" />
 
-            <div className="relative z-10 mt-12 mb-16  lg:text-start">
+            <div className="relative flex-1 z-10 mt-12 mb-16  lg:text-start">
                 <h3 id="cultural-title" className="text-2xl  font-bold text-[#3D3D3D] mb-4 group-hover:text-[#B9A779] transition-colors duration-500">
                     {title}
                 </h3>

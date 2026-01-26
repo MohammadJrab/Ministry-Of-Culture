@@ -26,11 +26,11 @@ export default async function MinisterWordSection() {
                 {/* Section Header */}
                 <ServerMotion animation="fadeUp" className="text-center mb-16">
                     <div className="inline-flex items-center gap-4 mb-6">
-                        <div className="h-px w-16 md:w-24 bg-gradient-to-r from-transparent to-[#B9A779]" />
+                        <div className="h-px w-16 md:w-24 bg-gradient-to-r rtl:bg-gradient-to-l from-transparent to-[#B9A779]" />
                         <span className="text-[#428177] font-medium text-sm tracking-wider uppercase">
                             {t('subtitle')}
                         </span>
-                        <div className="h-px w-16 md:w-24 bg-gradient-to-l from-transparent to-[#B9A779]" />
+                        <div className="h-px w-16 md:w-24 bg-gradient-to-l rtl:bg-gradient-to-r from-transparent to-[#B9A779]" />
                     </div>
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#2B3130]">
                         {t('title')}
