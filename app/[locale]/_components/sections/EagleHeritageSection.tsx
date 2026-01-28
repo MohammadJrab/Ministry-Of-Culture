@@ -42,9 +42,9 @@ const EagleHeritageSection = async () => {
                         {t('title')}
                     </h2>
                     <div className="flex items-center justify-center gap-4 mt-6">
-                        <span className="h-0.5 w-20 bg-linear-to-r from-transparent to-[#A48E68]" />
+                        <span className="h-0.5 w-20 bg-linear-to-r rtl:bg-linear-to-l from-transparent to-[#A48E68]" />
                         <div className="w-3 h-3 rotate-45 bg-[#A48E68]" />
-                        <span className="h-0.5 w-20 bg-linear-to-l from-transparent to-[#A48E68]" />
+                        <span className="h-0.5 w-20 bg-linear-to-l rtl:bg-linear-to-r from-transparent to-[#A48E68]" />
                     </div>
                 </ServerMotion>
 

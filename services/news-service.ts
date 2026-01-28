@@ -1,12 +1,10 @@
-﻿import {getFormatter, getLocale} from "next-intl/server";
-import {News} from "@/types/news";
-import {parseUTCDate} from "@/lib/utils";
-import {Filters} from "@/lib/filters";
+﻿import { getFormatter, getLocale } from "next-intl/server";
+import { News } from "@/types/news";
+import { parseUTCDate, formatDateTime } from "@/lib/utils";
+import { Filters } from "@/lib/filters";
 
-export async function getNews(filters?: Filters)
-{
-    try
-    {
+export async function getNews(filters?: Filters) {
+    try {
         const params = new URLSearchParams();
         if (filters)
             for (const [key, value] of Object.entries(filters))
@@ -24,10 +22,9 @@ export async function getNews(filters?: Filters)
             }
         });
 
-        if (!response.ok)
-        {
+        if (!response.ok) {
             const errorMessage = await response.json();
-            return {error: errorMessage.message};
+            return { error: errorMessage.message };
         }
 
         const result = await response.json();
@@ -37,7 +34,7 @@ export async function getNews(filters?: Filters)
         const news = result.data.newes || [];
 
         return {
-            news: news.map(e => parseNews(e, formatter)) as News[],
+            news: news.map(e => parseNews(e, formatter, locale)) as News[],
             error: undefined,
             page: result.page,
             pageSize: result.pageSize,
@@ -45,17 +42,14 @@ export async function getNews(filters?: Filters)
             totalPages: result.totalPages,
         }
 
-    } catch (error)
-    {
+    } catch (error) {
         console.error("Error during available news fetch: ", error.message);
-        return {error: error.message};
+        return { error: error.message };
     }
 }
 
-export async function getNewsById(id: string)
-{
-    try
-    {
+export async function getNewsById(id: string) {
+    try {
         const locale = await getLocale();
         const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/news/get-newes-by-id?lang=${locale}&Id=${id}`, {
             method: "GET",
@@ -66,12 +60,11 @@ export async function getNewsById(id: string)
         });
 
         if (response.status === 404)
-            return {error: 'News not found.'};
+            return { error: 'News not found.' };
 
-        if (!response.ok)
-        {
+        if (!response.ok) {
             const errorMessage = await response.json();
-            return {error: errorMessage.message};
+            return { error: errorMessage.message };
         }
 
         const fetchedData = (await response.json()).data;
@@ -79,19 +72,17 @@ export async function getNewsById(id: string)
 
         const formatter = await getFormatter();
 
-        return {news: parseNews(fetchedData, formatter), error: undefined}
-    } catch (error)
-    {
+        return { news: parseNews(fetchedData, formatter, locale), error: undefined }
+    } catch (error) {
         console.error("Error during news by id fetch: ", error.message);
-        return {error: error.message};
+        return { error: error.message };
     }
 }
 
-function parseNews(news: any, formatter: any): News
-{
+function parseNews(news: any, formatter: any, locale: string): News {
     return {
         ...news,
-        dateTime: formatter.dateTime(parseUTCDate(news.dateTime), 'standard'),
+        dateTime: formatDateTime(parseUTCDate(news.dateTime), locale),
         imgUrls: news.imagePathes,
     } as News
 }

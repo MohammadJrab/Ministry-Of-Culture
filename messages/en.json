@@ -389,6 +389,36 @@
       "goHome": "Go Home"
     }
   },
+  "common": {
+    "any": "All",
+    "search": "Search...",
+    "loading": "Loading...",
+    "noResults": "No results!",
+    "resultsCount": "{count, plural, =1 {1 result} other {{count} results}}",
+    "noResultsFound": "No results found",
+    "clearFilters": "Clear filters"
+  },
+  "datePicker": {
+    "triggerTitle": "Date filter",
+    "resetButton": "Reset",
+    "applyButton": "Apply"
+  },
+  "filters": {
+    "categoryTitle": "Category filter",
+    "cityTitle": "City filter",
+    "all": "All"
+  },
+  "notFound": {
+    "message": "We apologize, but the page you requested cannot be found.",
+    "goHome": "Return to Homepage"
+  },
+  "errorPage": {
+    "wrong": "Something went wrong!",
+    "tryAgain": "Try Again",
+    "connectionError": "Connection error. Please verify your internet connection and retry.",
+    "serverUpdating": "Server update in progress. Please wait...",
+    "goHome": "Go Home"
+  },
   "metadata": {
     "home": {
       "title": "Ministry Of Culture",
