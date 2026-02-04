@@ -66,14 +66,16 @@ export function Navbar() {
           href="https://dibfsy.com"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="انضموا إلينا في معرض الكتاب، حيث تلتقي العقول وتزدهر الثقافة. ننتظركم في الفترة من 2026-02-06 إلى 2026-02-12"
+          aria-label="انضموا إلينا في معرض الكتاب، حيث تلتقي العقول وتزدهر الثقافة. ننتظركم في الفترة من 2026-02-06 إلى 2026-02-16"
           className="group relative block w-full  no-underline"
         >
           <div className="w-full bg-gradient-to-r from-[#0f3b2e] via-[#14524a] to-[#0f3b2e] text-white">
-            <div className="mx-auto flex text-xs max-w-6xl text-pretty items-center justify-center gap-2 px-4 py-3 text-center font-semibold leading-relaxed transition-colors duration-200 group-hover:text-white/90 group-focus-visible:outline-none group-focus-visible:ring-2 group-focus-visible:ring-white/70 md:text-base">
-              انضموا إلينا في معرض الكتاب، ننتظركم من 2026-02-06 إلى 2026-02-12{" "}
+            <div className="mx-auto flex text-xs max-w-6xl text-balance items-center justify-center gap-2 px-4 py-3 text-center font-semibold leading-relaxed transition-colors duration-200 group-hover:text-white/90 group-focus-visible:outline-none group-focus-visible:ring-2 group-focus-visible:ring-white/70 md:text-base">
+              <div>
+                انضموا إلينا في معرض الكتاب، ننتظركم من <span className="text-nowrap">2026-02-06</span> إلى <span className="text-nowrap">2026-02-16</span>{" "}
+              </div>
               <IconArrowUpLeft
-                className="text-white size-4 ltr:-scale-x-100"
+                className="text-white size-4 ltr:-scale-x-100 shrink-0"
                 stroke={2}
               />
             </div>
@@ -190,7 +192,7 @@ export function Navbar() {
               className={"max-lg:hidden bg-lightBlack rounded-full"}
               asChild
             >
-              <Link href={"http://events.moc.gov.sy"} target="_blank">
+              <Link href={"http://events.moc.gov.sy/ar/"} target="_blank">
                 {t("events")}
                 <div className="rounded-full size-7 flex items-center justify-center bg-white">
                   <IconArrowUpLeft
