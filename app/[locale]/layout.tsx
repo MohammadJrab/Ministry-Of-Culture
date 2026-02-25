@@ -12,7 +12,6 @@ import Footer from "@/app/[locale]/_components/footer";
 import { Metadata } from "next";
 import { Montserrat, Changa, Cairo } from "next/font/google";
 import { Navbar } from "./_components/nav-bar";
-import { AuroraText } from "@/components/magicui/aurora-text";
 const montserratFont = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
@@ -28,11 +27,9 @@ const changaFont = Changa({
   preload: false,
 });
 const cairoFont = Cairo({
-  variable: "--font-cairo",
-  subsets: ["latin"],
-  weight: ["300", "400", "700"],
-  display: "swap",
-  preload: false,
+  subsets: ['arabic'],
+  display: 'swap',
+  variable: '--font-cairo',
 });
 
 export default async function RootLayout(props) {
@@ -40,7 +37,6 @@ export default async function RootLayout(props) {
   const { locale } = params;
   const { children } = props;
 
-  // Ensure that the incoming `locale` is valid.
   if (!routing.locales.includes(locale as any)) notFound();
   const direction = locale === "ar" ? "rtl" : "ltr";
   const messages = await getMessages();
@@ -70,20 +66,6 @@ export default async function RootLayout(props) {
           <LazyMotion strict features={domAnimation}>
             <DirectionProvider dir={direction}>
               <div className="flex flex-col min-h-screen">
-                <a
-                  href="https://dibfsy.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="انضموا إلينا في معرض الكتاب، حيث تلتقي العقول وتزدهر الثقافة. ننتظركم في الفترة من 2026-02-06 إلى 2026-02-12"
-                  className="group relative block w-full  no-underline"
-                >
-                  <div className="w-full bg-gradient-to-r from-[#0f3b2e] via-[#14524a] to-[#0f3b2e] text-white">
-                    <div className="mx-auto flex max-w-6xl items-center justify-center gap-2 px-4 py-3 text-center text-sm font-semibold leading-relaxed transition-colors duration-200 group-hover:text-white/90 group-focus-visible:outline-none group-focus-visible:ring-2 group-focus-visible:ring-white/70 md:text-base">
-                      انضموا إلينا في معرض الكتاب، حيث تلتقي العقول وتزدهر
-                      الثقافة. ننتظركم في الفترة من 2026-02-06 إلى 2026-02-12
-                    </div>
-                  </div>
-                </a>
                 <Navbar />
                 <main className={"flex-1"}>{children}</main>
                 <Footer locale={locale} />

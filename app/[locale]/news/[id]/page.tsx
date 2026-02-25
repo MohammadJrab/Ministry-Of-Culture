@@ -57,7 +57,7 @@ export default async function NewsDetailsPage({ params }: { params: Promise<{ id
 
                 {/* Description */}
                 <div className={'max-md:order-2'}>
-                    <h2 className={'font-bold'}>{t('descriptionTitle')}</h2>
+                    {/* <h2 className={'font-bold'}>{t('descriptionTitle')}</h2> */}
                     <p className="leading-relaxed">{news.description}</p></div>
             </div>
         </section>
@@ -67,10 +67,57 @@ export default async function NewsDetailsPage({ params }: { params: Promise<{ id
 export async function generateMetadata({ params }): Promise<Metadata> {
     const { locale, id } = await params;
     const t = await getTranslations({ locale, namespace: 'metadata.news' });
+    const appT = await getTranslations({ locale, namespace: 'metadata.home' });
     const { news, error } = await getNewsById(id);
 
+    const appName = appT('appName');
+
+    if (error) return {
+        title: t('fallbackTitle'),
+        description: t('description'),
+        robots: {
+            index: false,
+            follow: false,
+            nocache: true,
+            googleBot: {
+                index: false,
+                follow: false,
+                noimageindex: true,
+                'max-video-preview': -1,
+                'max-snippet': -1,
+            },
+        },
+    };
+
+    const pageUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL}/${locale}/news/${news.id}`;
+    const title = t('title', { news: news.title });
+    const description = t('detailedDescription', { news: news.title });
+    const imageUrl = news.imgUrls?.[0];
+
     return {
-        title: !error ? t('title', { news: news.title }) : t('fallbackTitle'),
-        description: t('description')
+        title,
+        description,
+        alternates: { canonical: pageUrl },
+
+        openGraph: {
+            title,
+            description,
+            url: pageUrl,
+            siteName: appName,
+            type: 'article',
+            ...(imageUrl && {
+                images: [{
+                    url: imageUrl,
+                    alt: news.title,
+                }],
+            }),
+        },
+
+        twitter: {
+            card: 'summary_large_image',
+            title,
+            description,
+            ...(imageUrl && { images: imageUrl }),
+        },
     };
 }

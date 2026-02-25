@@ -4,7 +4,6 @@ import { usePathname, useRouter } from "@/i18n/routing";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import * as React from "react";
-import { useMediaQuery } from "react-responsive";
 import { IconChevronDown } from "@tabler/icons-react";
 import { VariantProps } from "class-variance-authority";
 
@@ -18,8 +17,15 @@ export default function LanguageSelector({ size = 'sm' }: LanguageSelectorProps)
     const t = useTranslations("header");
     const pathname = usePathname();
     const router = useRouter();
-    const isMobile = useMediaQuery({ maxWidth: 1024 });
+    const [isMobile, setIsMobile] = React.useState(false);
     const currentLocale = useLocale();
+
+    React.useEffect(() => {
+        const check = () => setIsMobile(window.innerWidth <= 1024);
+        check();
+        window.addEventListener('resize', check);
+        return () => window.removeEventListener('resize', check);
+    }, []);
 
     function handleLocaleChange(locale: string) {
         if (currentLocale === locale) return;

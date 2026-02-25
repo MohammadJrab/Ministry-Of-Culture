@@ -62,33 +62,14 @@ export function Navbar() {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-20 flex flex-col w-full">
-        <a
-          href="https://dibfsy.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="انضموا إلينا في معرض الكتاب، حيث تلتقي العقول وتزدهر الثقافة. ننتظركم في الفترة من 2026-02-06 إلى 2026-02-16"
-          className="group relative block w-full  no-underline"
-        >
-          <div className="w-full bg-gradient-to-r from-[#0f3b2e] via-[#14524a] to-[#0f3b2e] text-white">
-            <div className="mx-auto flex text-xs max-w-6xl text-balance items-center justify-center gap-2 px-4 py-3 text-center font-semibold leading-relaxed transition-colors duration-200 group-hover:text-white/90 group-focus-visible:outline-none group-focus-visible:ring-2 group-focus-visible:ring-white/70 md:text-base">
-              <div>
-                انضموا إلينا في معرض الكتاب، ننتظركم من <span className="text-nowrap">2026-02-06</span> إلى <span className="text-nowrap">2026-02-16</span>{" "}
-              </div>
-              <IconArrowUpLeft
-                className="text-white size-4 ltr:-scale-x-100 shrink-0"
-                stroke={2}
-              />
-            </div>
-          </div>
-        </a>
-        {/* <div className="bg-primary w-full relative">
+        <div className="bg-primary w-full relative">
           <img
             src="/svg/nav-shape.svg"
             alt="nav-shape"
             className="w-full h-12 object-cover lg:scale-150 scale-250 object-[20%_10%_20%_10%]"
           />
           <div className="absolute inset-0 bg-linear-to-b from-transparent to-primary" />
-        </div> */}
+        </div>
 
         <div className="w-full bg-white shadow-md">
           <div className="container h-16 flex justify-between items-center">

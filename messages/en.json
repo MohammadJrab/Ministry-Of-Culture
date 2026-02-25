@@ -443,7 +443,8 @@
     "news": {
       "title": "{news} ,news | Ministry Of Culture",
       "fallbackTitle": "News | Ministry Of Culture",
-      "description": "Read the latest news from Ministry Of Culture. Discover details, and see how we are shaping the cultural landscape."
+      "description": "Read the latest news from Ministry Of Culture. Discover details, and see how we are shaping the cultural landscape.",
+      "detailedDescription": "Read \"{news}\" from Ministry Of Culture."
     },
     "notFound": {
       "title": "404 | Ministry Of Culture",
