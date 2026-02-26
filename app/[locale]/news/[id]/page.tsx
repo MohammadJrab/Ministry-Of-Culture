@@ -58,7 +58,7 @@ export default async function NewsDetailsPage({ params }: { params: Promise<{ id
                 {/* Description */}
                 <div className={'max-md:order-2'}>
                     {/* <h2 className={'font-bold'}>{t('descriptionTitle')}</h2> */}
-                    <p className="leading-relaxed">{news.description}</p></div>
+                    <p className="leading-relaxed whitespace-pre-line">{news.description}</p></div>
             </div>
         </section>
     );
@@ -91,8 +91,8 @@ export async function generateMetadata({ params }): Promise<Metadata> {
 
     const pageUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL}/${locale}/news/${news.id}`;
     const title = t('title', { news: news.title });
-    const description = t('detailedDescription', { news: news.title });
-    const imageUrl = news.imgUrls?.[0];
+    const description = t('detailedDescription', { news: news.description });
+    const imageUrl = news.imgUrls[0];
 
     return {
         title,
@@ -105,19 +105,16 @@ export async function generateMetadata({ params }): Promise<Metadata> {
             url: pageUrl,
             siteName: appName,
             type: 'article',
-            ...(imageUrl && {
-                images: [{
-                    url: imageUrl,
-                    alt: news.title,
-                }],
-            }),
+            images: [{
+                url: imageUrl,
+                alt: news.title,
+            }]
         },
-
         twitter: {
             card: 'summary_large_image',
             title,
             description,
-            ...(imageUrl && { images: imageUrl }),
-        },
+            images: imageUrl,
+        }
     };
 }

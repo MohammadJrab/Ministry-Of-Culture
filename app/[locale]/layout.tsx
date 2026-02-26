@@ -30,6 +30,8 @@ const cairoFont = Cairo({
   subsets: ['arabic'],
   display: 'swap',
   variable: '--font-cairo',
+  preload: false,
+  weight: ["300", "400", "700"]
 });
 
 export default async function RootLayout(props) {
