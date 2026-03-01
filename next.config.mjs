@@ -8,8 +8,8 @@ const nextConfig = {
     images: {
         remotePatterns: [
             {
-                protocol: 'http',
-                hostname: 'qmindtech-001-site8.jtempurl.com',
+                protocol: 'https',
+                hostname: 'dashboard.qmindtech-ai.net',
                 port: '',
             },
             {
