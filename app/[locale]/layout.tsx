@@ -72,12 +72,13 @@ export default async function RootLayout(props) {
                 <main className={"flex-1"}>{children}</main>
                 <Footer locale={locale} />
                 <Link href={"https://qmindtech.net"}>
-                  <div className="relative flex h-10 w-full flex-col items-center justify-center overflow-hidden bg-white">
+                  <div className="relative flex h-10 w-full items-center justify-center overflow-hidden bg-white">
                     <div className="flex items-center gap-2">
                       <span className="text-center ltr:text-xs text-sm font-medium">
                         {t("developedBy")} {t("qmindTech")}
                       </span>
                     </div>
+                    <img src="/svg/qmind-logo.svg" alt="Qmind Logo" height={18} width={18} />
                   </div>
                 </Link>
               </div>
@@ -86,7 +87,7 @@ export default async function RootLayout(props) {
           </LazyMotion>
         </body>
       </html>
-    </NextIntlClientProvider>
+    </NextIntlClientProvider >
   );
 }
 
