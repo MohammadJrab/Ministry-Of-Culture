@@ -22,6 +22,35 @@ export function parseIntIfExists(val: string | undefined) {
 }
 
 /**
+ * Formats a Date object to "YYYY-MM-DD HH:mm AM/PM" format.
+ * @param date - The Date object to format
+ * @param locale - The locale string (e.g., 'en', 'ar') to determine AM/PM format
+ * @returns Formatted date string like "2026-01-19 05:12 AM" or "2026-01-19 05:12 ص"
+ */
+export function formatDateTime(date: Date, locale: string = 'en'): string {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+
+  let hours = date.getHours();
+  const minutes = String(date.getMinutes()).padStart(2, '0');
+
+  // Use Arabic AM/PM indicators for Arabic locale
+  let ampm: string;
+  if (locale === 'ar') {
+    ampm = hours >= 12 ? 'م' : 'ص'; // م for PM (masa), ص for AM (sabah)
+  } else {
+    ampm = hours >= 12 ? 'PM' : 'AM';
+  }
+
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  const hoursStr = String(hours).padStart(2, '0');
+
+  return `${year}-${month}-${day} ${hoursStr}:${minutes} ${ampm}`;
+}
+
+/**
  * Formats an array of date strings into a human-readable display.
  * @param dateStrings - Array of date strings (ISO or parseable by Date)
  * @param dateFormatter - next-intl function for formatting the result dates.

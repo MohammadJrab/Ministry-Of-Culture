@@ -5,7 +5,7 @@ import HighlightsOfInternationalParticipations from './_components/highlightsOfI
 
 export default async function InternationalParticipation() {
     return (
-        <main>
+        <main className='overflow-hidden'>
             <TheNewSyriaSection />
             <HighlightsOfInternationalParticipations />
         </main>

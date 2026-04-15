@@ -10,6 +10,9 @@ import {
 } from "@/components/ui/carousel"
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react"
 import { cn } from "@/lib/utils"
+import Autoplay from "embla-carousel-autoplay"
+import Fade from "embla-carousel-fade"
+import { m } from "motion/react"
 
 interface UnescoItem {
     title: string
@@ -21,6 +24,8 @@ interface UnescoCarouselProps {
     items: UnescoItem[]
     locale: string
 }
+
+
 
 export function UnescoCarousel({ items, locale }: UnescoCarouselProps) {
     const [api, setApi] = React.useState<CarouselApi>()
@@ -48,6 +53,12 @@ export function UnescoCarousel({ items, locale }: UnescoCarouselProps) {
         >
             <Carousel
                 setApi={setApi}
+                plugins={[
+                    Autoplay({
+                        delay: 3000,
+                    }),
+                    Fade(),
+                ]}
                 opts={{
                     align: "start",
                     loop: true,
@@ -71,8 +82,22 @@ export function UnescoCarousel({ items, locale }: UnescoCarouselProps) {
                                 </div>
 
                                 <div className={cn("flex flex-col gap-2")}>
-                                    <h3 className="text-lg font-semibold">{item.title}</h3>
-                                    <p className="text-[#d6bf94] font-semibold text-lg">{item.year}</p>
+                                    <m.h3
+                                        initial={{ opacity: 0, y: 20 }}
+                                        animate={index === current ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                                        transition={{ duration: 0.5, delay: 0.2 }}
+                                        className="text-lg font-semibold"
+                                    >
+                                        {item.title}
+                                    </m.h3>
+                                    <m.p
+                                        initial={{ opacity: 0, y: 20 }}
+                                        animate={index === current ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                                        transition={{ duration: 0.5, delay: 0.3 }}
+                                        className="text-[#d6bf94] text-center lg:text-start font-semibold text-lg"
+                                    >
+                                        {item.year}
+                                    </m.p>
                                 </div>
 
                             </div>

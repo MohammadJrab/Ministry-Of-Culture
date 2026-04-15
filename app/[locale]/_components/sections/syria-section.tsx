@@ -1,12 +1,12 @@
 
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import { ServerMotion, MotionItem } from "@/components/motion";
+import { ServerMotion } from "@/components/motion";
 
 export default async function SyriaSection() {
     const t = await getTranslations('syria');
     return (
-        <section className={'pt-16 md:pt-32 min-h-[400px]  bg-[#F9F9F9] h-120  w-full  bg-size-[120%] bg-top bg-no-repeat bg-[url(/images/map-frame.svg)]'}>
+        <section className={'py-8 mt-8 min-h-[400px]  bg-[#F9F9F9]   w-full overflow-hidden  bg-size-[120%] bg-top bg-no-repeat bg-[url(/images/map-frame.svg)]'}>
             <div className={'container grid grid-cols-1 md:grid-cols-2 gap-12 items-center'}>
                 <ServerMotion animation="slideLeft">
                     <Image src="/images/map.svg" alt="map-frame" width={800} height={350} />

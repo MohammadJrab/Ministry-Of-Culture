@@ -11,6 +11,8 @@
     --color-background: hsl(var(--background));
     --color-foreground: hsl(var(--foreground));
 
+    --font-cairo: var(--font-cairo);
+
     --color-primary: hsl(var(--primary));
     --color-primary-foreground: hsl(var(--primary-foreground));
 
@@ -259,7 +261,7 @@
     }
 
     body:lang(ar) {
-        font-family: var(--font-changa), sans-serif !important;
+        font-family: var(--font-cairo), sans-serif !important;
     }
 }
 
@@ -420,6 +422,22 @@
     --color-gold: var(--gold);
     --color-lightBlack: var(--lightBlack);
     --color-lightPrimaryGreen: var(--lightPrimaryGreen);
+    --animate-shine: shine var(--duration) infinite linear;
+
+    @keyframes shine {
+        0% {
+            background-position: 0% 0%;
+        }
+
+        50% {
+            background-position: 100% 100%;
+        }
+
+        to {
+            background-position: 0% 0%;
+        }
+    }
+
 }
 
 .loader {
@@ -476,5 +494,15 @@
 
     75% {
         transform: translateY(5px) scale(0.9);
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border outline-ring/50;
+    }
+
+    body {
+        @apply bg-background text-foreground;
     }
 }
